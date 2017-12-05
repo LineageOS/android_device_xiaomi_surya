@@ -189,6 +189,10 @@ on enable-low-power
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 1
+    write /sys/class/drm/card0/device/idle_timeout_ms 100
+
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
