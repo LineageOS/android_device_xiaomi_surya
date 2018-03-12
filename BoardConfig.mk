@@ -120,6 +120,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
+# LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
