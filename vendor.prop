@@ -205,3 +205,8 @@ persist.vendor.radio.report_codec=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# ZRAM writeback
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
