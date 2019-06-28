@@ -122,6 +122,13 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 
+# TARGET_KERNEL_APPEND_DTB handling
+ifeq ($(strip $(PRODUCT_USE_DYNAMIC_PARTITIONS)),true)
+TARGET_KERNEL_APPEND_DTB := false
+else
+TARGET_KERNEL_APPEND_DTB := true
+endif
+
 # Set header version for bootimage
 ifneq ($(strip $(TARGET_KERNEL_APPEND_DTB)),true)
 # Enable DTB in bootimage and set header version
