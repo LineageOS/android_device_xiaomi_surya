@@ -122,6 +122,9 @@ camera.disable_zsl_mode=1
 # CNE
 persist.vendor.cne.feature=1
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Data modules
 ro.telephony.iwlan_operation_mode=legacy
 
