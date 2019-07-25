@@ -119,6 +119,9 @@ vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 camera.disable_zsl_mode=1
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # CNE
 persist.vendor.cne.feature=1
 
