@@ -46,9 +46,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IWifiDisplaySessionVideoTrack</name>
             <instance>wifidisplaysessionvideotrack</instance>
         </interface>
-        <fqname>@1.0::IWifiDisplaySession/wifidisplaysession</fqname>
-        <fqname>@1.0::IWifiDisplaySessionAudioTrack/wifidisplaysessionaudiotrack</fqname>
-        <fqname>@1.0::IWifiDisplaySessionImageTrack/wifidisplaysessionimagetrack</fqname>
-        <fqname>@1.0::IWifiDisplaySessionVideoTrack/wifidisplaysessionvideotrack</fqname>
     </hal>
 </manifest>

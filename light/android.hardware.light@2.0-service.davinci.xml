@@ -7,6 +7,5 @@
             <name>ILight</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ILight/default</fqname>
     </hal>
 </manifest>
