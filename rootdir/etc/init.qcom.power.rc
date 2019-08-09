@@ -74,8 +74,6 @@ on boot
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
 on charger
-    trigger enable-low-power
-
     wait /dev/block/platform/soc/1da4000.ufshc/by-name/system
     mount ext4 /dev/block/platform/soc/1da4000.ufshc/by-name/system / ro barrier=1
 
