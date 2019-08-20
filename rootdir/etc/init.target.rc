@@ -31,28 +31,6 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
-    # Add a cpuset for the camera daemon
-    mkdir /dev/cpuset/camera-daemon
-    write /dev/cpuset/camera-daemon/cpus 0-7
-    write /dev/cpuset/camera-daemon/mems 0
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
-    chmod 0660 /dev/cpuset/camera-daemon/tasks
-
-    # Boot time fs tuning
-    write /sys/block/sda/queue/iostats 0
-    write /sys/block/sda/queue/scheduler cfq
-    write /sys/block/sda/queue/iosched/slice_idle 0
-    write /sys/block/sda/queue/read_ahead_kb 2048
-    write /sys/block/sda/queue/nr_requests 256
-    write /sys/block/sde/queue/iostats 0
-    write /sys/block/sde/queue/scheduler cfq
-    write /sys/block/sde/queue/iosched/slice_idle 0
-    write /sys/block/sde/queue/read_ahead_kb 2048
-    write /sys/block/sde/queue/nr_requests 256
-
 on init && property:ro.boot.hwname=surya
     setprop ro.boot.product.hardware.sku surya
 
@@ -90,21 +68,8 @@ on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 
 on property:sys.boot_completed=1
-    # Set allocstall_threshold to 0
-    # Set swappiness to 100
-    write /sys/module/vmpressure/parameters/allocstall_threshold 0
-    write /proc/sys/vm/swappiness 100
-
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
-
-    # Runtime fs tuning
-    write /sys/block/sda/queue/read_ahead_kb 128
-    write /sys/block/sda/queue/nr_requests 128
-    write /sys/block/sda/queue/iostats 1
-    write /sys/block/sde/queue/read_ahead_kb 128
-    write /sys/block/sde/queue/nr_requests 128
-    write /sys/block/sde/queue/iostats 1
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
@@ -132,18 +97,6 @@ on property:init.svc.vendor.per_mgr=running
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
-on charger
-    wait /dev/block/platform/soc/1da4000.ufshc/by-name/system
-    mount ext4 /dev/block/platform/soc/1da4000.ufshc/by-name/system / ro barrier=1
-
-    wait /dev/block/platform/soc/1da4000.ufshc/by-name/persist
-    mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev barrier=1
-
-    start vendor.hvdcp_opti
-    start vendor.thermal-engine
-    start vendor.qcom-post-boot
-    start vendor.power_off_alarm
-
 service vendor.thermal-engine /vendor/bin/thermal-engine
     class main
     user root
@@ -152,12 +105,6 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
     socket thermal-recv-passive-client stream 0666 system system
     socket thermal-send-rule stream 0660 system system
     group root
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.remosaic_daemon /vendor/bin/remosaic_daemon
