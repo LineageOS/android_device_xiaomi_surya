@@ -19,7 +19,7 @@ property Name is called. -->
 
                 <!--Vendor Properties -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
-                <Prop Name="vendor.iop.enable_uxe" Value="0" />
+                <Prop Name="vendor.iop.enable_uxe" Value="1" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
                 <Prop Name="vendor.perf.iop_v3.enable" Value="false" />
@@ -27,6 +27,7 @@ property Name is called. -->
 
                 <!--System Properties -->
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="ro.lmk.enable_userspace_lmk" Value="false" />
 
