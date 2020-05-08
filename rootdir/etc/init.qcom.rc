@@ -230,6 +230,9 @@ on property:sys.boot_completed=1
 
     chown media audio /sys/kernel/wdsp0/boot
 
+    # Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
+
     start vendor.qcom-post-boot
 
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
