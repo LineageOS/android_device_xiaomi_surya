@@ -104,16 +104,6 @@ on enable-low-power
     # to one of the CPU from the default IRQ affinity mask.
     write /proc/irq/default_smp_affinity 3f
 
-    # Core control parameters on silver
-    write /sys/devices/system/cpu/cpu0/core_ctl/not_preferred "0 0 0 0 1 1"
-    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 4
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 60
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 40
-    write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 100
-    write /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/task_thres 8
-    write /sys/devices/system/cpu/cpu6/core_ctl/enable 0
-
     # Colocation v3 settings
     write /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz 740000
 
