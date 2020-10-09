@@ -160,6 +160,8 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
+
 # IR spi node
 /dev/ir_spi               0660   system     system
 /dev/spidev0.0            0660   system     audio
