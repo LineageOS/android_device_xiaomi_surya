@@ -25,4 +25,4 @@ persist.sensor.                    u:object_r:persist_sensors_prop:s0
 ro.vendor.touchfeature.type        u:object_r:vendor_touchfeature_prop:s0
 
 # Xiaomi thermal daemon
-sys.thermal.                       u:object_r:thermal_normal_prop:s0
+vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
