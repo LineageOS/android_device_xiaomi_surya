@@ -344,10 +344,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
--vendor/lib64/libplatformconfig.so
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
--vendor/lib/libplatformconfig.so
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # Display
 vendor/lib64/libdisplayqos.so
