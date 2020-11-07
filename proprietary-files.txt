@@ -469,6 +469,9 @@ vendor/lib64/libtinyxml2_1.so
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
+# Display - from NX627J 20201029.204053
+vendor/lib64/libsdedrm.so|45e9fa3877184e96d16d1a547248f2541a2e33cf
+
 # DPM
 framework/tcmclient.jar
 system_ext/bin/dpmd
