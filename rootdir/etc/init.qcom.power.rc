@@ -91,7 +91,6 @@ on property:init.svc.vendor.charger=running
     mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev barrier=1
 
     start vendor.hvdcp_opti
-    start vendor.thermal-engine
     start vendor.power_off_alarm
 
 on enable-low-power
