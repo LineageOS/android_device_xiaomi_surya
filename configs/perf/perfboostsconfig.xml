@@ -31,8 +31,8 @@
                        0x40800100, 1516" />
        <Config
            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="sdmmagpie"
-           Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                      0x40800100, 0xFFF" />
+           Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1708,
+                      0x40800100, 1497" />
 
     <!--app lauch boost (disabling packing)-->
         <!-- POWER COLLAPSE resource opcode, value-->
@@ -204,8 +204,6 @@
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- DISABLE_POWER_COLLAPSE resource opcode, value-->
         <!-- STORAGE CLK SCALING resource opcode, value-->
 
         <!-- Type="", MTP boost -->
@@ -217,8 +215,8 @@
 
         <Config
             Id="0x00001086" Enable="true" Target="sdmmagpie"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1" />
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1747,
+                       0x40800100, 1516, 0x42C10000, 0x1" />
 
     <!--PackageInstall boost-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -296,22 +294,5 @@
                 Id="0x00001040" Enable="true" Timeout="0" Target="sdmmagpie"
                 Resources="0x40000000, 0x0" />
 
-    <!--XiaoMi bluetooth boost-->
-        <!-- SCHED DOWNMIGRATE resource opcode, value-->
-        <!-- SCHED UPMIGRATE resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-
-        <!-- Type="1", bluetooth boost of 3sec -->
-        <Config
-            Id="0x00011C0" Type="1" Enable="true" Timeout="3000" Target="msmsteppe"
-            Resources="0x40400000, 0x1, 0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF,
-                       0x40804100, 0xFFF, 0x40800000, 1516, 0x40800100, 1516" />
-       <Config
-           Id="0x00011C0" Type="1" Enable="true" Timeout="3000" Target="sdmmagpie"
-           Resources="0x40400000, 0x1, 0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF,
-                      0x40804100, 0xFFF, 0x40800000, 0xFFF, 0x40800100, 0xFFF" />
     </PerfBoost>
 </BoostConfigs>
