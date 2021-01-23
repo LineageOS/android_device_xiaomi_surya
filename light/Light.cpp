@@ -22,7 +22,8 @@
 
 #include <fstream>
 
-#define NOTIFICATION_LED    "/sys/class/leds/left/"
+#define NOTIFICATION_LED_LEFT(x) "/sys/class/leds/left/" + x
+#define NOTIFICATION_LED_WHITE(x) "/sys/class/leds/white/" + x
 
 #define BREATH              "breath"
 #define BRIGHTNESS          "brightness"
@@ -30,10 +31,18 @@
 
 namespace {
 /*
+ * Get the full path to the led node.
+ */
+static std::string getLedPath(std::string path) {
+    std::ifstream left_path(NOTIFICATION_LED_LEFT(path));
+    return left_path.good() ? NOTIFICATION_LED_LEFT(path) : NOTIFICATION_LED_WHITE(path);
+}
+
+/*
  * Write value to path and close file.
  */
 static void set(std::string path, std::string value) {
-    std::ofstream file(path);
+    std::ofstream file(getLedPath(path));
 
     if (!file.is_open()) {
         ALOGW("failed to write %s to %s", value.c_str(), path.c_str());
@@ -51,7 +60,7 @@ static void set(std::string path, int value) {
  * Read max brightness from path and close file.
  */
 static int getMaxBrightness(std::string path) {
-    std::ifstream file(path);
+    std::ifstream file(getLedPath(path));
     int value;
 
     if (!file.is_open()) {
@@ -97,11 +106,11 @@ static inline uint32_t getScaledBrightness(const LightState& state, uint32_t max
 }
 
 static void handleNotification(const LightState& state) {
-    uint32_t notificationBrightness = getScaledBrightness(state, getMaxBrightness(NOTIFICATION_LED MAX_BRIGHTNESS));
+    uint32_t notificationBrightness = getScaledBrightness(state, getMaxBrightness(MAX_BRIGHTNESS));
 
     /* Disable breathing or blinking */
-    set(NOTIFICATION_LED BREATH, 0);
-    set(NOTIFICATION_LED BRIGHTNESS, 0);
+    set(BREATH, 0);
+    set(BRIGHTNESS, 0);
 
     if (!notificationBrightness) {
         return;
@@ -111,11 +120,11 @@ static void handleNotification(const LightState& state) {
         case Flash::HARDWARE:
         case Flash::TIMED:
             /* Breathing */
-            set(NOTIFICATION_LED BREATH, 1);
+            set(BREATH, 1);
             break;
         case Flash::NONE:
         default:
-            set(NOTIFICATION_LED BRIGHTNESS, notificationBrightness);
+            set(BRIGHTNESS, notificationBrightness);
     }
 }
 

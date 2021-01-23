@@ -3,11 +3,15 @@ on boot
     chown system system /sys/class/leds/left/breath
     chown system system /sys/class/leds/right/brightness
     chown system system /sys/class/leds/right/breath
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/breath
 
     chmod 0644 /sys/class/leds/left/brightness
     chmod 0644 /sys/class/leds/left/breath
     chmod 0644 /sys/class/leds/right/brightness
     chmod 0644 /sys/class/leds/right/breath
+    chmod 0644 /sys/class/leds/white/brightness
+    chmod 0644 /sys/class/leds/white/breath
 
 service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.davinci
     interface android.hardware.light@2.0::ILight default
