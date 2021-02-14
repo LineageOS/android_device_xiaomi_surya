@@ -122,15 +122,33 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/kmsg                 0620   root       system
 
 # LED class devices
-/sys/class/leds/red      delay_on     0640    system    system
-/sys/class/leds/red      delay_off    0640    system    system
-/sys/class/leds/red      breath       0640    system    system
-/sys/class/leds/green    delay_on     0640    system    system
-/sys/class/leds/green    delay_off    0640    system    system
-/sys/class/leds/green    breath       0640    system    system
-/sys/class/leds/blue     delay_on     0640    system    system
-/sys/class/leds/blue     delay_off    0640    system    system
-/sys/class/leds/blue     breath       0640    system    system
+/sys/class/leds/left     breath          0640    system    system
+/sys/class/leds/left     brightness      0640    system    system
+/sys/class/leds/left     delay_off       0640    system    system
+/sys/class/leds/left     delay_on        0640    system    system
+/sys/class/leds/left     lo_idx          0640    system    system
+/sys/class/leds/left     lut_pattern     0640    system    system
+/sys/class/leds/left     max_brightness  0640    system    system
+/sys/class/leds/left     pause_lo_count  0640    system    system
+/sys/class/leds/left     step_ms         0640    system    system
+/sys/class/leds/right    breath          0640    system    system
+/sys/class/leds/right    brightness      0640    system    system
+/sys/class/leds/right    delay_off       0640    system    system
+/sys/class/leds/right    delay_on        0640    system    system
+/sys/class/leds/right    lo_idx          0640    system    system
+/sys/class/leds/right    lut_pattern     0640    system    system
+/sys/class/leds/right    max_brightness  0640    system    system
+/sys/class/leds/right    pause_lo_count  0640    system    system
+/sys/class/leds/right    step_ms         0640    system    system
+/sys/class/leds/white    breath          0640    system    system
+/sys/class/leds/white    brightness      0640    system    system
+/sys/class/leds/white    delay_off       0640    system    system
+/sys/class/leds/white    delay_on        0640    system    system
+/sys/class/leds/white    lo_idx          0640    system    system
+/sys/class/leds/white    lut_pattern     0640    system    system
+/sys/class/leds/white    max_brightness  0640    system    system
+/sys/class/leds/white    pause_lo_count  0640    system    system
+/sys/class/leds/white    step_ms         0640    system    system
 
 # NPU device
 /dev/msm_npu             0644   system     system
