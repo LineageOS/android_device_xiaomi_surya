@@ -1,15 +1,11 @@
 on boot
     chown system system /sys/class/leds/left/brightness
     chown system system /sys/class/leds/left/breath
-    chown system system /sys/class/leds/right/brightness
-    chown system system /sys/class/leds/right/breath
     chown system system /sys/class/leds/white/brightness
     chown system system /sys/class/leds/white/breath
 
     chmod 0644 /sys/class/leds/left/brightness
     chmod 0644 /sys/class/leds/left/breath
-    chmod 0644 /sys/class/leds/right/brightness
-    chmod 0644 /sys/class/leds/right/breath
     chmod 0644 /sys/class/leds/white/brightness
     chmod 0644 /sys/class/leds/white/breath
 
