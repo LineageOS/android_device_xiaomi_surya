@@ -162,3 +162,5 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # IR spi node
 /dev/ir_spi               0660   system     system
+/dev/spidev0.0            0660   system     audio
+/dev/spidev0.1            0660   system     system
