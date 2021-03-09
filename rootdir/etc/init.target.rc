@@ -179,3 +179,8 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     writepid /dev/cpuset/system-background/tasks
     disabled
+
+service mi_thermald /vendor/bin/mi_thermald
+    class core
+    user root
+    group system
