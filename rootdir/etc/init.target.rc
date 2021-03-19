@@ -91,54 +91,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
-    # Apply settings for sm6150
-    # Set the default IRQ affinity to the silver cluster. When a
-    # CPU is isolated/hotplugged, the IRQ affinity is adjusted
-    # to one of the CPU from the default IRQ affinity mask.
-    write /proc/irq/default_smp_affinity 3f
-
-    # Core control parameters on silver
-    write /sys/devices/system/cpu/cpu0/core_ctl/not_preferred "0 0 0 0 1 1"
-    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 4
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 60
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 40
-    write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 100
-    write /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/task_thres 8
-    write /sys/devices/system/cpu/cpu6/core_ctl/enable 0
-
-    # Setting b.L scheduler parameters
-    write /proc/sys/kernel/sched_downmigrate 65
-    write /proc/sys/kernel/sched_upmigrate 71
-    write /proc/sys/kernel/sched_group_downmigrate 85
-    write /proc/sys/kernel/sched_group_upmigrate 100
-    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
-
-    # colocation v3 settings
-    write /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz 740000
-
-    # configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1248000
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 576000
-
-    # configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq 1324600
-    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq 652800
-
-    # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-    write /sys/devices/system/cpu/cpu6/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu7/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load 85
-
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1248000"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 40
-
     # Set allocstall_threshold to 0
     # Set swappiness to 100
     write /sys/module/vmpressure/parameters/allocstall_threshold 0

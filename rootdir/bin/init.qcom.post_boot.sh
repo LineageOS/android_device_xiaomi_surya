@@ -81,6 +81,58 @@ function configure_memory_parameters() {
 case "$target" in
     "sm6150")
 
+    # Apply settings for sm6150
+    # Set the default IRQ affinity to the silver cluster. When a
+    # CPU is isolated/hotplugged, the IRQ affinity is adjusted
+    # to one of the CPU from the default IRQ affinity mask.
+    echo 3f > /proc/irq/default_smp_affinity
+
+    # Core control parameters on silver
+    echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
+    echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
+    echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
+    echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
+    echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
+    echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
+    echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
+    echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
+
+    # Setting b.L scheduler parameters
+    # default sched up and down migrate values are 71 and 65
+    echo 65 > /proc/sys/kernel/sched_downmigrate
+    echo 71 > /proc/sys/kernel/sched_upmigrate
+    # default sched up and down migrate values are 100 and 95
+    echo 85 > /proc/sys/kernel/sched_group_downmigrate
+    echo 100 > /proc/sys/kernel/sched_group_upmigrate
+    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
+
+    # colocation v3 settings
+    echo 740000 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
+
+    # configure governor settings for little cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+    echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+    echo 1248000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+    echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+
+    # configure governor settings for big cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+    echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
+    echo 0 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
+    echo 1324600 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
+    echo 652800 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+
+    # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
+    echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
+    echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
+    echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+
+    echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
+    echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+    echo "0:0 1:0 2:0 3:0 4:1804800 5:0 6:0 7:2208000" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
+    echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
+
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
     do
