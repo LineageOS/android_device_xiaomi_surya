@@ -5,7 +5,7 @@ on boot
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/cabc
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
 
-service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.surya
+service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.surya
     class hal
     user system
     group system
