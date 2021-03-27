@@ -159,3 +159,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/dual_role_usb/*	mode		0660	system	system
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
+
+# IR spi node
+/dev/ir_spi               0660   system     system
