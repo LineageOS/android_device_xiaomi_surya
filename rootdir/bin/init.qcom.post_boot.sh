@@ -130,8 +130,9 @@ case "$target" in
 
     echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
     echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
-    echo "0:0 1:0 2:0 3:0 4:1804800 5:0 6:0 7:2208000" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
-    echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
+
+    # Set Memory parameters
+    configure_memory_parameters
 
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
@@ -139,7 +140,6 @@ case "$target" in
         for cpubw in $device/*cpu-cpu-llcc-bw/devfreq/*cpu-cpu-llcc-bw
         do
             echo "bw_hwmon" > $cpubw/governor
-            echo 50 > $cpubw/polling_interval
             echo "2288 4577 7110 9155 12298 14236" > $cpubw/bw_hwmon/mbps_zones
             echo 4 > $cpubw/bw_hwmon/sample_ms
             echo 68 > $cpubw/bw_hwmon/io_percent
@@ -149,12 +149,12 @@ case "$target" in
             echo 0 > $cpubw/bw_hwmon/guard_band_mbps
             echo 250 > $cpubw/bw_hwmon/up_scale
             echo 1600 > $cpubw/bw_hwmon/idle_mbps
+            echo 50 > $cpubw/polling_interval
         done
 
         for llccbw in $device/*cpu-llcc-ddr-bw/devfreq/*cpu-llcc-ddr-bw
         do
             echo "bw_hwmon" > $llccbw/governor
-            echo 40 > $llccbw/polling_interval
             echo "1144 1720 2086 2929 3879 5931 6881" > $llccbw/bw_hwmon/mbps_zones
             echo 4 > $llccbw/bw_hwmon/sample_ms
             echo 68 > $llccbw/bw_hwmon/io_percent
@@ -164,13 +164,13 @@ case "$target" in
             echo 0 > $llccbw/bw_hwmon/guard_band_mbps
             echo 250 > $llccbw/bw_hwmon/up_scale
             echo 1600 > $llccbw/bw_hwmon/idle_mbps
+            echo 40 > $llccbw/polling_interval
         done
 
         for npubw in $device/*npu-npu-ddr-bw/devfreq/*npu-npu-ddr-bw
         do
             echo 1 > /sys/devices/virtual/npu/msm_npu/pwr
             echo "bw_hwmon" > $npubw/governor
-            echo 40 > $npubw/polling_interval
             echo "1144 1720 2086 2929 3879 5931 6881" > $npubw/bw_hwmon/mbps_zones
             echo 4 > $npubw/bw_hwmon/sample_ms
             echo 80 > $npubw/bw_hwmon/io_percent
@@ -180,6 +180,7 @@ case "$target" in
             echo 0 > $npubw/bw_hwmon/guard_band_mbps
             echo 250 > $npubw/bw_hwmon/up_scale
             echo 0 > $npubw/bw_hwmon/idle_mbps
+            echo 40 > $npubw/polling_interval
             echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
         done
 
@@ -206,11 +207,17 @@ case "$target" in
             echo "compute" > $latfloor/governor
             echo 10 > $latfloor/polling_interval
         done
-
     done
 
-    # Set Memory parameters
-    configure_memory_parameters
+    # cpuset parameters
+    echo 0-7     > /dev/cpuset/top-app/cpus
+    echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+    echo 0-2     > /dev/cpuset/background/cpus
+    echo 0-3     > /dev/cpuset/system-background/cpus
+    echo 0-3     > /dev/cpuset/restricted/cpus
+
+    # Turn off scheduler boost at the end
+    echo 0 > /proc/sys/kernel/sched_boost
     ;;
 esac
 

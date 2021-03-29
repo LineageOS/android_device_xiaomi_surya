@@ -84,13 +84,6 @@ on boot
     write /sys/class/thermal/thermal_message/sconfig 10
 
 on property:sys.boot_completed=1
-    # Setup runtime cpusets
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-6
-    write /dev/cpuset/background/cpus 0-1
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/restricted/cpus 0-3
-
     # Set allocstall_threshold to 0
     # Set swappiness to 100
     write /sys/module/vmpressure/parameters/allocstall_threshold 0
