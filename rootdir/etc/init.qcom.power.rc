@@ -100,23 +100,11 @@ on enable-low-power
     # to one of the CPU from the default IRQ affinity mask.
     write /proc/irq/default_smp_affinity 3f
 
-    # Colocation v3 settings
-    write /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz 740000
-
-    # Setting sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
-    write /sys/devices/system/cpu/cpu6/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu7/sched_load_boost -6
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load 85
-
     # Setting b.L scheduler parameters
-    write /proc/sys/kernel/sched_downmigrate 65
-    write /proc/sys/kernel/sched_upmigrate 71
-    write /proc/sys/kernel/sched_group_downmigrate 85
-    write /proc/sys/kernel/sched_group_upmigrate 100
-    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
-
-    # Turn off scheduler boost at the end
-    write /proc/sys/kernel/sched_boost 0
+    write /proc/sys/kernel/sched_downmigrate 85
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate_boosted 25
+    write /proc/sys/kernel/sched_upmigrate_boosted 25
 
     # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw/devfreq/soc:qcom,cpu-cpu-llcc-bw/governor "bw_hwmon"
