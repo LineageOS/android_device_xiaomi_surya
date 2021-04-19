@@ -189,6 +189,9 @@ on enable-low-power
     # Turn on sleep modes
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
     # Runtime fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
