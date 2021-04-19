@@ -112,9 +112,6 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu7/sched_load_boost -6
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load 85
 
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1248000"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 40
-
     # Setting b.L scheduler parameters
     write /proc/sys/kernel/sched_downmigrate 65
     write /proc/sys/kernel/sched_upmigrate 71
