@@ -237,9 +237,6 @@ on enable-low-power
 on property:sys.boot_completed=1
     trigger enable-low-power
 
-on property:init.svc.recovery=running
-    trigger enable-low-power
-
 service vendor.charger /system/bin/charger
     class charger
     user system
