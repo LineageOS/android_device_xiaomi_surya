@@ -899,10 +899,8 @@ system_ext/lib64/libwfduibcsink.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/libwfduibcsrc.so
 -system_ext/priv-app/WfdService/WfdService.apk
-vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/etc/init/wfdvndservice.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
