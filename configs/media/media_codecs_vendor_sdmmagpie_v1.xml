@@ -136,7 +136,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-240" />
             <Limit name="concurrent-instances" max="16" />
@@ -166,7 +166,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-240" />
             <Limit name="concurrent-instances" max="16" />
@@ -241,7 +241,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-240" />
             <Feature name="adaptive-playback" />
@@ -257,7 +257,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
@@ -314,7 +314,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-240" />
             <Feature name="adaptive-playback" />
@@ -330,7 +330,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
@@ -346,7 +346,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-240" />
             <Feature name="adaptive-playback" />
@@ -362,7 +362,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="size" min="96x96" max="4096x2160" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="24" max="1036800" />
+            <Limit name="blocks-per-second" min="24" max="972000" />
             <Limit name="bitrate" range="1-40000000" />
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
