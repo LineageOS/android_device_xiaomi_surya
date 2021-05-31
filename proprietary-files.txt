@@ -409,6 +409,7 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
 vendor/lib64/liboemcrypto.so
+vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librpmb.so
