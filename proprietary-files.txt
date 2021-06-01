@@ -470,7 +470,7 @@ vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 -system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -917,7 +917,7 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/sns_reg_config
 
 # Soter
-app/SoterService/SoterService.apk
+system/app/SoterService/SoterService.apk
 -vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 -vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -961,7 +961,7 @@ vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
 
 # WiFi Display
--framework/WfdCommon.jar
+-system/framework/WfdCommon.jar
 -system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
