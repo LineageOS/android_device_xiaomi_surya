@@ -17,41 +17,16 @@
 #include <aidl/android/hardware/power/BnPower.h>
 #include <android-base/file.h>
 #include <android-base/logging.h>
-#include <linux/input.h>
+#include <sys/ioctl.h>
 
-namespace {
-int open_ts_input() {
-    int fd = -1;
-    DIR *dir = opendir("/dev/input");
+// defines from drivers/input/touchscreen/xiaomi/xiaomi_touch.h
+#define SET_CUR_VALUE 0
+#define Touch_Doubletap_Mode 14
 
-    if (dir != NULL) {
-        struct dirent *ent;
+#define TOUCH_DEV_PATH "/dev/xiaomi-touch"
 
-        while ((ent = readdir(dir)) != NULL) {
-            if (ent->d_type == DT_CHR) {
-                char absolute_path[PATH_MAX] = {0};
-                char name[80] = {0};
-
-                strcpy(absolute_path, "/dev/input/");
-                strcat(absolute_path, ent->d_name);
-
-                fd = open(absolute_path, O_RDWR);
-                if (ioctl(fd, EVIOCGNAME(sizeof(name) - 1), &name) > 0) {
-                    if (strcmp(name, "NVTCapacitiveTouchScreen") == 0)
-                        break;
-                }
-
-                close(fd);
-                fd = -1;
-            }
-        }
-
-        closedir(dir);
-    }
-
-    return fd;
-}
-}  // anonymous namespace
+#define TOUCH_MAGIC 0x5400
+#define TOUCH_IOC_SETMODE TOUCH_MAGIC + SET_CUR_VALUE
 
 namespace aidl {
 namespace google {
@@ -59,9 +34,6 @@ namespace hardware {
 namespace power {
 namespace impl {
 namespace pixel {
-
-static constexpr int kInputEventWakeupModeOff = 4;
-static constexpr int kInputEventWakeupModeOn = 5;
 
 using ::aidl::android::hardware::power::Mode;
 
@@ -78,17 +50,9 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
         case Mode::DOUBLE_TAP_TO_WAKE: {
-            int fd = open_ts_input();
-            if (fd == -1) {
-                LOG(WARNING)
-                    << "DT2W won't work because no supported touchscreen input devices were found";
-                return false;
-            }
-            struct input_event ev;
-            ev.type = EV_SYN;
-            ev.code = SYN_CONFIG;
-            ev.value = enabled ? kInputEventWakeupModeOn : kInputEventWakeupModeOff;
-            write(fd, &ev, sizeof(ev));
+            int fd = open(TOUCH_DEV_PATH, O_RDWR);
+            int arg[2] = {Touch_Doubletap_Mode, enabled ? 1 : 0};
+            ioctl(fd, TOUCH_IOC_SETMODE, &arg);
             close(fd);
             return true;
         }
