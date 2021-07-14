@@ -1,0 +1,1 @@
+allow system_server proc_last_kmsg:file { open read getattr };

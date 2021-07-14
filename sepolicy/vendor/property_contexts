@@ -1,5 +1,8 @@
 # Audio
 audio.soundtrigger.debug.          u:object_r:vendor_default_prop:s0
+tas.smartpa.debug.disable          u:object_r:vendor_default_prop:s0
+tas.smartpa.debug.txdevice         u:object_r:vendor_default_prop:s0
+tas.smartpa.debug.txformat24       u:object_r:vendor_default_prop:s0
 
 # Camera
 vendor.camera.                     u:object_r:vendor_camera_prop:s0
@@ -9,14 +12,26 @@ camera.sensor.frontMain.fuseID     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearUltra.fuseID     u:object_r:vendor_camera_prop:s0
 camera.sensor.rearTele.fuseID      u:object_r:vendor_camera_prop:s0
 persist.camera.                    u:object_r:vendor_camera_prop:s0
+camera.                            u:object_r:vendor_camera_prop:s0
+persist.vendor.camera              u:object_r:vendor_camera_prop:s0
+vendor.camera.boot_complete        u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.              u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                  u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.res.fmq.size      u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.req.fmq.size      u:object_r:vendor_camera_prop:s0
+persist.vednor.camera.arcsoftlog   u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 gf.debug.                          u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.             u:object_r:vendor_fp_prop:s0
+vendor.sys.fp                      u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor                   u:object_r:vendor_fp_prop:s0
-ro.hardware.fp                     u:object_r:vendor_fp_prop:s0
 sys.panel.display                  u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
+
+# Rild
+ro.fota.oem                        u:object_r:vendor_default_prop:s0
+ro.build.software.version          u:object_r:vendor_default_prop:s0
 
 # Sensors
 persist.sensor.                    u:object_r:persist_sensors_prop:s0

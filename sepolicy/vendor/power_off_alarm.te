@@ -1,0 +1,2 @@
+type power_off_alarm;
+allow vendor_power_off_alarm kmsg_device:chr_file r_file_perms;
