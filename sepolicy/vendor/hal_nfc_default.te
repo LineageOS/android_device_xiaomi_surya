@@ -1,2 +1,12 @@
 allow hal_nfc_default vendor_nfc_vendor_data_file:dir create_dir_perms;
 allow hal_nfc_default vendor_nfc_vendor_data_file:file create_file_perms;
+
+# Allow to add nxpnfc_hwservice
+add_hwservice(hal_nfc_default, nxpnfc_hwservice)
+
+# Allow to call secure element HAL
+binder_call(hal_nfc_default, hal_secure_element_default)
+
+# Allow to find nxpese_hwservice
+allow hal_nfc_default nxpese_hwservice:hwservice_manager find;
+
