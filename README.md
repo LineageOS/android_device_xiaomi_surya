@@ -1,26 +1,29 @@
 Copyright (C) 2020 The LineageOS Project
 
-Device configuration for Xiaomi Mi 9T/Redmi K20
-=========================================
+Unified Device Tree for Xiaomi POCO X3 NFC / X3
+===============================================
 
-The Xiaomi Mi 9T/Redmi K20 (codenamed _"davinci"_) is a mid-range smartphone from Xiaomi.
+The Xiaomi POCO X3 NFC (codename _"surya"_) and the POCO X3 (codename _"karna"_) are mid range 
+smartphones from Xiaomi's sub-brand Redmi and Poco, respectively.
 
-It was announced in June 2019. Release date was June 2019.
+Poco X3 was announced and released in September 2020.
+
+The Poco X3 with NFC is sold as global and UE variants, while the Poco X3 without NFC is 
+commercialized manily in India.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Dual-core 2.2 GHz Kryo 470 Gold & Hexa-core 1.8 GHz Kryo 470 Silver
-Chipset | Qualcomm SDM730 Snapdragon 730
+SoC     | Qualcomm SM7150-AC Snapdragon 732G 
+CPU     | Octa-core (2x2.3 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)
 GPU     | Adreno 618
-Memory  | 6 GB RAM
-Shipped Android Version | 9.0
-Storage | 64/128 GB (UFS 2.0)
-Battery | Non-removable Li-Po 4000 mAh
-Display | 1080 x 2340 pixels, 6.39 inches (~428 ppi pixel density)
-Camera  | Main 48 MP f/1.8, telephoto lens, ultrawide lens, dual-LED (dual tone) flash
+Memory  | 6/8 GB RAM
+Shipped Android Version | 10 with MIUI 12
+Storage | 64/128/256 GB
+Battery | Non-removable Li-Po 6000/5160 mAh battery
+Display | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches, IPS LCD (~395 ppi density)
 
 ## Device picture
 
-![Xiaomi Mi 9T/Redmi K20](https://i01.appmifile.com/webfile/globalimg/products/pc/redmik20/index_slider_1.png "Xiaomi Mi 9T/Redmi K20 in carbon black")
+![Xiaomi POCO X3 / X3 NFC](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-x3-nfc-1.jpg "Xiaomi POCO X3 NFC")
