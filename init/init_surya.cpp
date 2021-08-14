@@ -75,6 +75,7 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 
 void vendor_load_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
+    std::string region = GetProperty("ro.boot.hwc", "");
 
     std::string model;
     std::string device;
@@ -83,20 +84,22 @@ void vendor_load_properties() {
     std::string name;
     std::string mod_device;
 
-    if (hwname == "surya") {
-        device = "surya";
-        model = "M2007J20CG";
-        mod_device = "surya_global";
-        name = "surya_global";
-        fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.8.0.RJGMIXM:user/release-keys";
-        description = "surya_eea-user 11 RKQ1.200826.002 V12.5.8.0.RJGMIXM release-keys";
-    } else if (hwname == "karna") {
+    if (hwname == "karna") {
         device = "karna";
         model = "M2007J20CI";
-        mod_device = "surya_in_global";
         name = "karna_in";
         fingerprint = "POCO/karna_in/karna:11/RKQ1.200826.002/V12.5.8.0.RJGMIXM:user/release-keys";
         description = "karna_in-user 11 RKQ1.200826.002 V12.5.8.0.RJGMIXM release-keys";
+   } else {
+        device = "surya";
+        name = "surya_global";
+        fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.8.0.RJGMIXM:user/release-keys";
+        description = "surya_eea-user 11 RKQ1.200826.002 V12.5.8.0.RJGMIXM release-keys";
+
+        if (region == "THAI" || region == "THAI_PA")
+            model = "M2007J20CT";
+        else
+            model = "M2007J20CG";
    }
 
     set_ro_build_prop("fingerprint", fingerprint);
@@ -106,7 +109,4 @@ void vendor_load_properties() {
     set_ro_product_prop("model", model);
     set_ro_product_prop("name", name);
     property_override("ro.build.description", description.c_str());
-    if (mod_device != "") {
-        property_override("ro.product.mod_device", mod_device.c_str());
-    }
 }
