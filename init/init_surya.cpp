@@ -100,9 +100,7 @@ void vendor_load_properties() {
    }
 
     set_ro_build_prop("fingerprint", fingerprint);
-    set_ro_product_prop("brand", "POCO");
     set_ro_product_prop("device", device);
-    set_ro_product_prop("product", device);
     set_ro_product_prop("model", model);
     set_ro_product_prop("name", name);
     property_override("ro.build.description", description.c_str());
