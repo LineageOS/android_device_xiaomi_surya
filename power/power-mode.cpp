@@ -37,8 +37,7 @@ int open_ts_input() {
 
                 fd = open(absolute_path, O_RDWR);
                 if (ioctl(fd, EVIOCGNAME(sizeof(name) - 1), &name) > 0) {
-                    if (strcmp(name, "fts") == 0 || strcmp(name, "goodix_ts") == 0 ||
-                            strcmp(name, "NVTCapacitiveTouchScreen") == 0)
+                    if (strcmp(name, "NVTCapacitiveTouchScreen") == 0)
                         break;
                 }
 
