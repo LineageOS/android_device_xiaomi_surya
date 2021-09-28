@@ -20,6 +20,7 @@ cc_binary {
     init_rc: ["vendor.lineage.livedisplay@2.0-service.surya.rc"],
     relative_install_path: "hw",
     srcs: [
+        "AdaptiveBacklight.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],
