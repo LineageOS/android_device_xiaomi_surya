@@ -1,9 +1,8 @@
 type hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
-type fingerprint_device, dev_type;
+type fingerprint_device, sysfs_type, fs_type;
 type fingerprint_data_file, data_file_type, file_type;
 vendor_internal_prop(vendor_fp_prop)
 
-allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default fingerprint_data_file:dir create_dir_perms;
 allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
 allow hal_fingerprint_default input_device:chr_file rw_file_perms;
