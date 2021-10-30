@@ -464,13 +464,11 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libsdedrm.so
 
 # Display calibration
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
-
-# Display - from NX627J 20201029.204053
-vendor/lib64/libsdedrm.so|45e9fa3877184e96d16d1a547248f2541a2e33cf
 
 # DPM
 framework/tcmclient.jar
@@ -598,6 +596,7 @@ vendor/bin/xtra-daemon
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libizat_client_api.so
