@@ -16,6 +16,7 @@
 -->
 <resources>
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable dirac</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Choose headphones type</string>
