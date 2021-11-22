@@ -7,6 +7,12 @@ on property:ro.boot.product.hardware.sku=surya
 on property:ro.boot.hwversion=*
     setprop vendor.boot.hwversion ${ro.boot.hwversion}
 
+on post-fs && property:ro.boot.product.hardware.sku=surya
+    mount none /vendor/firmware_mnt/image/bdf_j20g.bin /vendor/firmware_mnt/image/bdwlan.bin bind
+
+on post-fs && property:ro.boot.product.hardware.sku=karna
+    mount none /vendor/firmware_mnt/image/bdf_j20i.bin /vendor/firmware_mnt/image/bdwlan.bin bind
+
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
     class early_hal
