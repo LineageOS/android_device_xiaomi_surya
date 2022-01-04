@@ -1,4 +1,4 @@
-Copyright (C) 2020 The LineageOS Project
+Copyright (C) 2022 The LineageOS Project
 
 Unified Device Tree for Xiaomi POCO X3 NFC / X3
 ===============================================
