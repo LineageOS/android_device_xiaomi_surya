@@ -513,8 +513,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail_32 \
     libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libnl \
     libqdMetaData \
+    libqdMetaData.system \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
