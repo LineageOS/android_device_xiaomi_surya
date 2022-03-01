@@ -16,6 +16,23 @@
       "message": "12.5.5.0 is not released as stable for Surya yet.\nI will wait until XIAOMI releases it as stable before going further.\nI will change my score later when it\u0027s released stable and tested by me.",
       "revId": "94c4132dd27d0791ea1d8fcffbe934b91ab91a1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "599d863b_326537a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-03-01T07:12:20Z",
+      "side": 1,
+      "message": "Ok, tested fine",
+      "revId": "94c4132dd27d0791ea1d8fcffbe934b91ab91a1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
