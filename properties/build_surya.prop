@@ -5,3 +5,6 @@ bluetooth.device.default_name=POCO X3 NFC
 ro.product.odm.device=surya
 ro.product.odm.model=M2007J20CG
 ro.product.odm.name=surya_eea
+
+# USB
+vendor.usb.product_string=POCO X3 NFC
