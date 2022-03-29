@@ -105,7 +105,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version 2
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-TARGET_KERNEL_CONFIG := surya_defconfig
+TARGET_KERNEL_CONFIG := surya_defconfig vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
 # LMKD
