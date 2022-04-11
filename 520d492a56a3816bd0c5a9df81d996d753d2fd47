@@ -16,6 +16,23 @@
       "message": "Can you build\u0026test this? At the moment i cannot",
       "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "680def66_29056d22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-04-11T11:56:39Z",
+      "side": 1,
+      "message": "im sure this will make worse user experience. You need to wake and press side fps. press and unlock doesnt work afaik",
+      "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
