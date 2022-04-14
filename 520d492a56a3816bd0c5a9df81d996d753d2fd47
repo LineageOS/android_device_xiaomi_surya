@@ -33,6 +33,59 @@
       "message": "im sure this will make worse user experience. You need to wake and press side fps. press and unlock doesnt work afaik",
       "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64d8fbc7_6883a999",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19841
+      },
+      "writtenOn": "2022-04-14T15:50:03Z",
+      "side": 1,
+      "message": "Having the ability to unlock the device with the screen off is a great help, it just makes the experience worse by having to first turn the screen on and then touch the sensor again to unlock.",
+      "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59e6f01c_7a754381",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19841
+      },
+      "writtenOn": "2022-04-14T15:50:03Z",
+      "side": 1,
+      "message": "Possibly, we will test to see what happens.",
+      "parentUuid": "680def66_29056d22",
+      "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8009405_b632a38f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19841
+      },
+      "writtenOn": "2022-04-14T15:50:03Z",
+      "side": 1,
+      "message": "Sure, I\u0027ll build a test build",
+      "parentUuid": "a41afece_e2465510",
+      "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
