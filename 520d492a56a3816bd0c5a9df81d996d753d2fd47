@@ -86,6 +86,23 @@
       "parentUuid": "a41afece_e2465510",
       "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a9f0974_40f39440",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-04-14T16:03:29Z",
+      "side": 1,
+      "message": "Then its settled. Rejected.",
+      "revId": "520d492a56a3816bd0c5a9df81d996d753d2fd47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
