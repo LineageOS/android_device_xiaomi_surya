@@ -169,3 +169,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ir_spi               0660   system     system
 /dev/spidev0.0            0660   system     audio
 /dev/spidev0.1            0660   system     system
+
+# Fingerprint
+/dev/goodix_fp            0660   system     system
