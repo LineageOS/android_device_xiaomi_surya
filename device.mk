@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libaudio-resampler \
     libtinycompress
 
 PRODUCT_COPY_FILES += \
