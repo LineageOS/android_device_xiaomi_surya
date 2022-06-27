@@ -39,3 +39,31 @@ allow vendor_toolbox {
     vendor_persist_vpp_file
     vendor_persist_wcnss_service_file
 }:dir { r_dir_perms setattr };
+
+allow vendor_toolbox {
+    mnt_vendor_file
+    persist_block_device
+    unlabeled
+    vendor_persist_alarm_file
+    vendor_persist_audio_file
+    vendor_persist_bluetooth_file
+    vendor_persist_camera_file
+    vendor_persist_data_file
+    vendor_persist_display_file
+    vendor_persist_drm_file
+    vendor_persist_elabel_file
+    vendor_persist_feature_enabler_file
+    vendor_persist_file
+    vendor_persist_haptics_file
+    vendor_persist_hvdcp_file
+    vendor_persist_iar_db_file
+    vendor_persist_mmi_file
+    vendor_persist_qti_fp_file
+    vendor_persist_rfs_file
+    vendor_persist_rfs_shared_hlos_file
+    vendor_persist_secnvm_file
+    vendor_persist_sensors_file
+    vendor_persist_time_file
+    vendor_persist_vpp_file
+    vendor_persist_wcnss_service_file
+}:{ fifo_file file } { r_file_perms setattr };
