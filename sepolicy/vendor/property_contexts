@@ -41,6 +41,14 @@ ro.build.software.version          u:object_r:vendor_default_prop:s0
 # Sensors
 persist.sensor.                    u:object_r:persist_sensors_prop:s0
 
+# Telephony
+ro.vendor.oem.imei                 u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.meid                 u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.psno                 u:object_r:vendor_sno_prop:s0
+ro.vendor.oem.sno                  u:object_r:vendor_sno_prop:s0
+persist.vendor.radio.imei          u:object_r:vendor_deviceid_prop:s0
+persist.vendor.radio.meid          u:object_r:vendor_deviceid_prop:s0
+
 # Xiaomi specific build properties
 ro.boot.hwc                        u:object_r:build_prop:s0
 ro.boot.hwversion                  u:object_r:build_prop:s0
