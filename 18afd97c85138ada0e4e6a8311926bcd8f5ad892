@@ -22,6 +22,23 @@
       },
       "revId": "18afd97c85138ada0e4e6a8311926bcd8f5ad892",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84c615b3_6f420b8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-01T17:17:29Z",
+      "side": 1,
+      "message": "surya actually supports HDR, fix your stuff\nIt\u0027s probably AOSP colors or composition dataspace (line 143) of vendor.prop",
+      "revId": "18afd97c85138ada0e4e6a8311926bcd8f5ad892",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
