@@ -45,7 +45,7 @@ vendor/lib/rfsa/adsp/tas25xx_TI_0.bin
 vendor/lib/rfsa/adsp/tas25xx_TI_1.bin
 
 # Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/app/PowerOffAlarm/PowerOffAlarm.apk
 -vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 -vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -124,7 +124,7 @@ vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
--system_ext/framework/audiosphere.jar
+system_ext/framework/audiosphere.jar
 
 # Audio libraries
 -vendor/lib/btaudio_offload_if.so
@@ -389,14 +389,14 @@ vendor/firmware/CAMERA_ICP.elf
 -vendor/bin/hvdcp_opti
 
 # Certificate Authority
--vendor/app/CACertService/CACertService.apk
+vendor/app/CACertService/CACertService.apk
 -vendor/lib64/libcacertclient.so
 -vendor/lib64/libjnihelper.so
 -vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # CNE
--vendor/app/CneApp/CneApp.apk
--vendor/app/IWlanService/IWlanService.apk
+vendor/app/CneApp/CneApp.apk
+vendor/app/IWlanService/IWlanService.apk
 -vendor/bin/cnd
 vendor/etc/init/cnd.rc
 -vendor/lib64/libcneapiclient.so
@@ -470,20 +470,20 @@ vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
 # DPM
--framework/tcmclient.jar
+framework/tcmclient.jar
 -system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
--system_ext/framework/com.qti.dpmframework.jar
--system_ext/framework/dpmapi.jar
+system_ext/framework/com.qti.dpmframework.jar
+system_ext/framework/dpmapi.jar
 -system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_system_ext
 -system_ext/lib64/libdpmctmgr.so
 -system_ext/lib64/libdpmfdmgr.so
 -system_ext/lib64/libdpmframework.so
 -system_ext/lib64/libdpmtcm.so
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 -vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 -vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_vendor
@@ -524,7 +524,7 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 
 # Fingerprint
 vendor/etc/permissions/com.fingerprints.extension.xml
--vendor/framework/com.fingerprints.extension.jar
+vendor/framework/com.fingerprints.extension.jar
 -vendor/lib64/com.fingerprints.extension@1.0.so
 -vendor/lib64/hw/fingerprint.fpc.default.so
 -vendor/lib64/hw/fingerprint.goodix.default.so
@@ -629,7 +629,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -system_ext/lib64/lib-imsvtutils.so
 -system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
--system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk
 -vendor/bin/imsdatadaemon
 -vendor/bin/imsqmidaemon
 -vendor/bin/imsrcsd
@@ -785,12 +785,12 @@ system_ext/etc/permissions/qti_permissions.xml
 -vendor/lib/libqmi.so
 
 # RIL
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
--system_ext/framework/qcrilhook.jar
--system_ext/framework/qti-telephony-common.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+system_ext/framework/qcrilhook.jar
+system_ext/framework/qti-telephony-common.jar
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/bin/adpl
 -vendor/bin/hw/qcrild
 -vendor/bin/netmgrd
@@ -917,7 +917,7 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 
 # Soter
--app/SoterService/SoterService.apk
+app/SoterService/SoterService.apk
 -vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 -vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -941,7 +941,7 @@ vendor/etc/thermal-4k.conf
 -vendor/lib64/libthermalfeature.so
 
 # Time
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 -vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 -vendor/lib64/libtime_genoff.so
