@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "842b6f6b_d95e8a98",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-07T16:02:15Z",
+      "side": 1,
+      "message": "I\u0027m not really sure this is the proper way either, your display should support DCI P3, but better than the previous fix",
+      "revId": "22dbee6189d46cd06529788fbd4e97441e5e510e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ffee2266_ce0b7321",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 532,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-07T16:02:15Z",
+      "side": 1,
+      "message": "COLOR_MODE_DEFAULT",
+      "range": {
+        "startLine": 532,
+        "startChar": 28,
+        "endLine": 532,
+        "endChar": 49
+      },
+      "revId": "22dbee6189d46cd06529788fbd4e97441e5e510e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
