@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9ac3771_4665ec4d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-07-08T09:32:50Z",
+      "side": 1,
+      "message": "Any pointers on how to find a better solution can be useful, meanwhile this fix should work, indeed better than before.",
+      "parentUuid": "842b6f6b_d95e8a98",
+      "revId": "22dbee6189d46cd06529788fbd4e97441e5e510e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ffee2266_ce0b7321",
@@ -31,6 +49,30 @@
       "writtenOn": "2022-07-07T16:02:15Z",
       "side": 1,
       "message": "COLOR_MODE_DEFAULT",
+      "range": {
+        "startLine": 532,
+        "startChar": 28,
+        "endLine": 532,
+        "endChar": 49
+      },
+      "revId": "22dbee6189d46cd06529788fbd4e97441e5e510e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2730cd1_cb0f4bc7",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 532,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-07-08T09:32:50Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ffee2266_ce0b7321",
       "range": {
         "startLine": 532,
         "startChar": 28,
