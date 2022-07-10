@@ -16,6 +16,23 @@
       "message": "Hell no",
       "revId": "883781a1825ede7e5bbf1319198cdb55c055263a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "051adc49_f644f55c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-10T21:14:27Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/charter/+/331199",
+      "revId": "883781a1825ede7e5bbf1319198cdb55c055263a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
