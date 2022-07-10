@@ -33,6 +33,23 @@
       "message": "https://review.lineageos.org/c/LineageOS/charter/+/331199",
       "revId": "883781a1825ede7e5bbf1319198cdb55c055263a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d4427b6_16e9f1c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-07-10T21:31:12Z",
+      "side": 1,
+      "message": "yeah, shim or no.",
+      "revId": "883781a1825ede7e5bbf1319198cdb55c055263a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
