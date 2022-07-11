@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00fd3501_5780b344",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-11T08:35:58Z",
+      "side": 1,
+      "message": "Are you sure you can use this soundtrigger HAL?",
+      "revId": "7bf84ffe7a3e4458bf873a6a8917084141973075",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
