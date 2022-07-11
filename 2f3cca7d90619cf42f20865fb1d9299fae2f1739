@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5d3898c_13e41f45",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2022-07-11T01:43:47Z",
+      "side": 1,
+      "message": "Heyyo, while this will work as AOSP WFD will work... the downside is it will be low resolution and no HD Content Protection (HDCP).\n\nyou can check here I did try to switch to lemonade system WFD stack and it does work for display but I did have no sound problems which might have been fixed in sepolicy but I haven\u0027t had time to test it again\n\nhttps://review.lineageos.org/c/LineageOS/android_device_lenovo_sm8150-common/+/309739\n\nand\n\nhttps://review.lineageos.org/c/LineageOS/android_device_lenovo_sm8150-common/+/326139/\n\nfor the system WFD blobs you can just grab them from the OP sm8150 vendor tree",
+      "revId": "2f3cca7d90619cf42f20865fb1d9299fae2f1739",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
