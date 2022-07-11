@@ -33,6 +33,24 @@
       "message": "Will look into it more in detail beside testing",
       "revId": "7bf84ffe7a3e4458bf873a6a8917084141973075",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "407d0b3d_4e1e3f42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-11T08:47:14Z",
+      "side": 1,
+      "message": "If screen off Ok Google works then it\u0027s ok",
+      "parentUuid": "09d7910c_5396d5f1",
+      "revId": "7bf84ffe7a3e4458bf873a6a8917084141973075",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
