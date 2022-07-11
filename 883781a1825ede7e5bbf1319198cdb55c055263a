@@ -50,6 +50,23 @@
       "message": "yeah, shim or no.",
       "revId": "883781a1825ede7e5bbf1319198cdb55c055263a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba81604c_6476aa90",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-07-11T08:35:28Z",
+      "side": 1,
+      "message": "Sorry, cannot accept something against charter.",
+      "revId": "883781a1825ede7e5bbf1319198cdb55c055263a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
