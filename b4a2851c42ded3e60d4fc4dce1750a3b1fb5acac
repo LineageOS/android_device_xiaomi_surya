@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b66bf02_d33b4826",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-07-19T08:04:19Z",
+      "side": 1,
+      "message": "Fixed to avoid merge conflicts after dropping other commit",
+      "revId": "b4a2851c42ded3e60d4fc4dce1750a3b1fb5acac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
