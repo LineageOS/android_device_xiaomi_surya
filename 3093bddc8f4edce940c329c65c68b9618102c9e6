@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07413df6_516a3aac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-07-19T08:06:28Z",
+      "side": 1,
+      "message": "Edited to fix merge conflict due to previous commit being dropped",
+      "revId": "3093bddc8f4edce940c329c65c68b9618102c9e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
