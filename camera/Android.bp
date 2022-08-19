@@ -12,6 +12,5 @@ cc_library_shared {
     vendor: true,
     shared_libs: [
         "libpiex",
-        "libutils",
     ],
 }
