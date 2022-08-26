@@ -512,7 +512,7 @@ vendor/etc/gpfspath_oem_config.xml
 # DRM widevine
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/lib64/mediadrm/libwvdrmengine.so
 -vendor/lib64/libwvhidl.so
 
@@ -592,7 +592,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -vendor/bin/lowi-server
 -vendor/bin/slim_daemon
 -vendor/bin/xtra-daemon
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 -vendor/lib64/libcdfw.so
 -vendor/lib64/libcdfw_remote_api.so
@@ -962,7 +962,7 @@ vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
 
 # WiFi Display
--framework/WfdCommon.jar
+framework/WfdCommon.jar
 -system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
@@ -1006,7 +1006,7 @@ system_ext/etc/wfdconfigsink.xml
 -system_ext/lib64/libwfduibcsink.so
 -system_ext/lib64/libwfduibcsrcinterface.so
 -system_ext/lib64/libwfduibcsrc.so
--system_ext/priv-app/WfdService/WfdService.apk
+system_ext/priv-app/WfdService/WfdService.apk
 -vendor/bin/wfdvndservice
 -vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
