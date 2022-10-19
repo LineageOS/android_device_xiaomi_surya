@@ -95,8 +95,8 @@ void vendor_load_properties() {
    } else {
         device = "surya";
         name = "surya_global";
-        fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.8.0.RJGMIXM:user/release-keys";
-        description = "surya_eea-user 11 RKQ1.200826.002 V12.5.8.0.RJGMIXM release-keys";
+        fingerprint = "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.8.0.RJGMIXM:user/release-keys";
+        description = "surya_global-user 11 RKQ1.200826.002 V12.5.8.0.RJGMIXM release-keys";
 
         if (region == "THAI" || region == "THAI_PA")
             model = "M2007J20CT";
