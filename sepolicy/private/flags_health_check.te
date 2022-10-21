@@ -1,0 +1,2 @@
+allow flags_health_check aac_drc_prop:file { getattr  map  open };
+allow flags_health_check ab_update_gki_prop:file { getattr  open };
