@@ -483,21 +483,6 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
-    <!-- Height of the status bar.
-         Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
-         -->
-    <dimen name="status_bar_height_default">28dp</dimen>
-    <dimen name="status_bar_height_portrait">98px</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
-
-    <!-- Radius of the software rounded corners at the top of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">91px</dimen>
-
-    <!-- Radius of the software rounded corners at the bottom of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">89px</dimen>
-
     <!-- List supported color modes. -->
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
