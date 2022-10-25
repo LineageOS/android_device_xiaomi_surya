@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b6495f5_bf870418",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26332
+      },
+      "writtenOn": "2022-10-25T08:24:15Z",
+      "side": 1,
+      "message": "Already done from vendor/lineage\nhttps://github.com/LineageOS/android_vendor_lineage/commit/06851a6556b6bc8fccf5193ae5471948fe43adc9",
+      "revId": "183c82e848b1783036fbe1c0f2307895c888c12f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
