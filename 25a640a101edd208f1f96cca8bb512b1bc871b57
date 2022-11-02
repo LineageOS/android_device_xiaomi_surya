@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd741293_47bbef1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2022-11-02T15:17:36Z",
+      "side": 1,
+      "message": "due to gitlab limits, no more vendor changes are accepted for 19.1. This commit has been pushed for 20.",
+      "revId": "25a640a101edd208f1f96cca8bb512b1bc871b57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
