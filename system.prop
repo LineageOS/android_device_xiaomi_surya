@@ -1,9 +1,6 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
-# Camera
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
-
 # Charger
 ro.charger.enable_suspend=true
 
