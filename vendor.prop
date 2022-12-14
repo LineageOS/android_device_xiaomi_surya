@@ -117,6 +117,7 @@ ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
+persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 camera.disable_zsl_mode=1
 
 # CNE
