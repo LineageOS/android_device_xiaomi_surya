@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de6730db_8480cbe4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19841
+      },
+      "writtenOn": "2022-12-15T16:07:19Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e so uh, grep your blobs for me. struggling to believe this one?\n\nsure, here!\n\nroot@root:~/android_vendor_xiaomi_surya/proprietary# grep -r persist.vednor.camera.arcsoftlog\ngrep: vendor/lib64/camera/components/com.arcsoft.node.distortioncorrection.so: binary file matches\ngrep: vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so: binary file matches\ngrep: vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so: binary file matches\ngrep: vendor/lib64/hw/com.qti.chi.override.so: binary file matches",
+      "revId": "145c589875aa335422cdc21cb56f96687a5944c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
