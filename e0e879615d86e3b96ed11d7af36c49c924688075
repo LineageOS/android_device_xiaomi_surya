@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "db5a8b50_7159e44e",
+        "filename": "overlay-lineage/packages/apps/Aperture/app/src/main/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-12-17T09:34:24Z",
+      "side": 1,
+      "message": "Change to spaces.",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 1
+      },
+      "revId": "e0e879615d86e3b96ed11d7af36c49c924688075",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
