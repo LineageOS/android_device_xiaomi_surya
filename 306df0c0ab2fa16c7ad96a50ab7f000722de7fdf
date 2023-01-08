@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3136fd05_795dc596",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-01-08T08:30:54Z",
+      "side": 1,
+      "message": "Ringback tone is always present (both CSFB and VoLTE), telephone works as expected.",
+      "revId": "306df0c0ab2fa16c7ad96a50ab7f000722de7fdf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
