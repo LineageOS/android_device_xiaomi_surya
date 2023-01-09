@@ -33,6 +33,23 @@
       "message": "Moved this commit to 20, as 19.1 will most likely not be built anymore.",
       "revId": "306df0c0ab2fa16c7ad96a50ab7f000722de7fdf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7c0ee21_bd9af6a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-01-09T19:54:08Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e or just merge it on both?\n\nIndeed possible",
+      "revId": "306df0c0ab2fa16c7ad96a50ab7f000722de7fdf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
