@@ -16,6 +16,23 @@
       "message": "Ringback tone is always present (both CSFB and VoLTE), telephone works as expected.",
       "revId": "306df0c0ab2fa16c7ad96a50ab7f000722de7fdf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98f2469a_d728c10c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-01-09T09:44:43Z",
+      "side": 1,
+      "message": "Moved this commit to 20, as 19.1 will most likely not be built anymore.",
+      "revId": "306df0c0ab2fa16c7ad96a50ab7f000722de7fdf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
