@@ -151,8 +151,8 @@
     <ctl name="TAS256X ASI Right Switch" value="0" />
     <ctl name="TAS256X ASI Left Switch" value="0" />
     <ctl name="TAS256X RX MODE LEFT" value="Speaker" />
-    <ctl name="TAS256X PLAYBACK VOLUME LEFT" value="55" />
-    <ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="55" />
+    <ctl name="TAS256X PLAYBACK VOLUME LEFT" value="56" />
+    <ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="54" />
     <ctl name="TAS256x Profile id" value="0" />
     <!-- 24bit support end -->
     <!-- HFP start -->
@@ -231,15 +231,23 @@
     <!-- RT Proxy Cal end -->
 
     <!-- Incall Recording -->
-    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
-    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
     <!-- Incall Recording End -->
 
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
+    <!-- Add by wzg for MIUI sos function 20191127 start -->
+    <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0" />
+    <!-- Add by wzg for MIUI sos function 20191127 end -->
     <!-- Incall Music End -->
 
     <!-- compress-voip-call start -->
@@ -1772,6 +1780,25 @@
         <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="1" />
     </path>
 
+<!-- Add by wzg for MIUI SOS function 20191127 -->
+    <path name="incall_music_uplink speaker-protected">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink receiver">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink voice-handset">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink" />
+    </path>
+
+<!-- Add by wzg for MIUI SOS function 20191127 -->
+
     <path name="incall-rec-uplink bt-sco">
         <path name="incall-rec-uplink" />
     </path>
@@ -1780,11 +1807,19 @@
         <path name="incall-rec-uplink" />
     </path>
 
+    <path name="incall-rec-uplink bt-sco-swb">
+        <path name="incall-rec-uplink" />
+    </path>
+
     <path name="incall-rec-uplink usb-headset-mic">
         <path name="incall-rec-uplink" />
     </path>
 
     <path name="incall-rec-uplink afe-proxy">
+        <path name="incall-rec-uplink" />
+    </path>
+
+    <path name="incall-rec-uplink headset-mic">
         <path name="incall-rec-uplink" />
     </path>
 
@@ -1800,12 +1835,24 @@
         <path name="incall-rec-uplink-compress" />
     </path>
 
+    <path name="incall-rec-uplink-compress bt-sco-swb">
+        <path name="incall-rec-uplink-compress" />
+    </path>
+
     <path name="incall-rec-uplink-compress usb-headset-mic">
         <path name="incall-rec-uplink-compress" />
     </path>
 
     <path name="incall-rec-uplink-compress afe-proxy">
         <path name="incall-rec-uplink-compress" />
+    </path>
+
+    <path name="incall-rec-uplink-compress headset-mic">
+        <path name="incall-rec-uplink-compress" />
+    </path>
+
+    <path name="incall-rec-uplink call-proxy-in">
+        <path name="incall-rec-uplink" />
     </path>
 
     <path name="incall-rec-downlink">
@@ -1820,11 +1867,19 @@
         <path name="incall-rec-downlink" />
     </path>
 
+    <path name="incall-rec-downlink bt-sco-swb">
+        <path name="incall-rec-downlink" />
+    </path>
+
     <path name="incall-rec-downlink usb-headset-mic">
         <path name="incall-rec-downlink" />
     </path>
 
     <path name="incall-rec-downlink afe-proxy">
+        <path name="incall-rec-downlink" />
+    </path>
+
+    <path name="incall-rec-downlink headset-mic">
         <path name="incall-rec-downlink" />
     </path>
 
@@ -1840,11 +1895,19 @@
         <path name="incall-rec-downlink-compress" />
     </path>
 
+    <path name="incall-rec-downlink-compress bt-sco-swb">
+        <path name="incall-rec-downlink-compress" />
+    </path>
+
     <path name="incall-rec-downlink-compress usb-headset-mic">
         <path name="incall-rec-downlink-compress" />
     </path>
 
     <path name="incall-rec-downlink-compress afe-proxy">
+        <path name="incall-rec-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-downlink-compress headset-mic">
         <path name="incall-rec-downlink-compress" />
     </path>
 
@@ -1861,11 +1924,19 @@
         <path name="incall-rec-uplink-and-downlink" />
     </path>
 
+    <path name="incall-rec-uplink-and-downlink bt-sco-swb">
+        <path name="incall-rec-uplink-and-downlink" />
+    </path>
+
     <path name="incall-rec-uplink-and-downlink usb-headset-mic">
         <path name="incall-rec-uplink-and-downlink" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink afe-proxy">
+        <path name="incall-rec-uplink-and-downlink" />
+    </path>
+
+    <path name="incall-rec-uplink-and-downlink headset-mic">
         <path name="incall-rec-uplink-and-downlink" />
     </path>
 
@@ -1882,11 +1953,19 @@
         <path name="incall-rec-uplink-and-downlink-compress" />
     </path>
 
+    <path name="incall-rec-uplink-and-downlink-compress bt-sco-swb">
+        <path name="incall-rec-uplink-and-downlink-compress" />
+    </path>
+
     <path name="incall-rec-uplink-and-downlink-compress usb-headset-mic">
         <path name="incall-rec-uplink-and-downlink-compress" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink-compress afe-proxy">
+        <path name="incall-rec-uplink-and-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-uplink-and-downlink-compress headset-mic">
         <path name="incall-rec-uplink-and-downlink-compress" />
     </path>
 
@@ -2473,6 +2552,10 @@
         <path name="incall_music_uplink" />
     </path>
 
+    <path name="incall_music_uplink bt-sco-swb">
+        <path name="incall_music_uplink" />
+    </path>
+
     <path name="incall_music_uplink speaker-and-display-port">
         <path name="incall_music_uplink" />
     </path>
@@ -2502,6 +2585,10 @@
     </path>
 
     <path name="incall_music_uplink headphones">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink headset">
         <path name="incall_music_uplink" />
     </path>
 
@@ -2538,6 +2625,133 @@
     </path>
     <path name="incall_music_uplink afe-proxy">
         <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink call-proxy">
+        <path name="incall_music_uplink" />
+    </path>
+
+   <!-- MIUI SOS patch start -->
+    <path name="incall_music_uplink2">
+        <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="1" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-protected">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 handset-hac">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 voice-handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 receiver">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 display-port">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-display-port">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-display-port">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 usb-headset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 voice-tty-hco-handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-a2dp">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-bt-a2dp">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-a2dp">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 afe-proxy">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 call-proxy">
+        <path name="incall_music_uplink2" />
+    </path>
+   <!-- MIUI SOS patch end -->
+
+    <path name="call-proxy">
+    </path>
+
+    <path name="call-proxy-in">
+    </path>
+
+    <path name ="voice-tx">
     </path>
 
    <path name="spkr-rx-calib">
@@ -2602,25 +2816,25 @@
     <path name="speaker">
         <ctl name="TERT_MI2S_RX Channels" value="Two" />
         <ctl name="TAS256X RX MODE RIGHT" value="Speaker" />
-	<ctl name="TAS256X ASI1 SEL RIGHT" value="Right" />
-	<ctl name="TAS256X ASI1 SEL LEFT"  value="Left" />
-	<ctl name="TAS256X ASI Right Switch" value="1" />
-	<ctl name="TAS256X ASI Left Switch"  value="1" />
+        <ctl name="TAS256X ASI1 SEL RIGHT" value="Right" />
+        <ctl name="TAS256X ASI1 SEL LEFT"  value="Left" />
+        <ctl name="TAS256X ASI Right Switch" value="1" />
+        <ctl name="TAS256X ASI Left Switch"  value="1" />
     </path>
 <!--add for factory spk test-->
     <path name="speaker-left">
         <ctl name="TERT_MI2S_RX Channels" value="One" />
-	<ctl name="TAS256X PLAYBACK VOLUME LEFT" value="52" />
+        <ctl name="TAS256X PLAYBACK VOLUME LEFT" value="56" />
         <ctl name="TAS256X RX MODE RIGHT" value="Speaker" />
-	<ctl name="TAS256X ASI1 SEL RIGHT" value="Left" />
-	<ctl name="TAS256X ASI Left Switch" value="1" />
+        <ctl name="TAS256X ASI1 SEL RIGHT" value="Left" />
+        <ctl name="TAS256X ASI Left Switch" value="1" />
     </path>
     <path name="speaker-right">
         <ctl name="TERT_MI2S_RX Channels" value="One" />
-	<ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="52" />
+        <ctl name="TAS256X PLAYBACK VOLUME RIGHT" value="54" />
         <ctl name="TAS256X RX MODE RIGHT" value="Speaker" />
         <ctl name="TAS256X ASI1 SEL RIGHT" value="Right" />
-	<ctl name="TAS256X ASI Right Switch" value="1" />
+        <ctl name="TAS256X ASI Right Switch" value="1" />
     </path>
 
     <path name="speaker-mono">
@@ -2754,27 +2968,43 @@
 
     <path name="handset">
         <ctl name="TERT_MI2S_RX Channels" value="One" />
-	<ctl name="TAS256x Profile id" value="1" />
-	<ctl name="TAS256X PLAYBACK VOLUME LEFT" value="51" />
+        <ctl name="TAS256x Profile id" value="1" />
+        <ctl name="TAS256X PLAYBACK VOLUME LEFT" value="50" />
         <ctl name="TAS256X RX MODE LEFT" value="Receiver" />
-	<ctl name="TAS256X ASI1 SEL LEFT" value="Left" />
-	<ctl name="TAS256X ASI Left Switch" value="1" />
+        <ctl name="TAS256X ASI1 SEL LEFT" value="Left" />
+        <ctl name="TAS256X ASI Left Switch" value="1" />
     </path>
 
     <path name="handset-mic">
      <!--   <path name="amic1" />-->
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC0" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC1_MIXER Switch" value="1" />
-	<ctl name="TX DEC1 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX1" value="ADC2" />
-	<ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-	<ctl name="ADC2_MIXER Switch" value="1" />
-	<ctl name="ADC2 MUX" value="INP3" />
-	<ctl name="IIR0 INP0 MUX" value="DEC0" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="ADC2" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="IIR0 INP0 MUX" value="DEC0" />
     </path>
+
+   <path name="handset-miui-mic">
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC2" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="IIR0 INP0 MUX" value="DEC0" />
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="6" />
+   </path>
 
    <path name="main-mic">
         <ctl name="TX_DEC0 Volume" value="84" />
@@ -2853,7 +3083,7 @@
 
     <path name="headset-mic">
         <path name="amic2" />
-	<ctl name="ADC2 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="6" />
     </path>
 
     <path name="voice-handset">
@@ -2897,7 +3127,7 @@
     </path>
 
     <path name="voice-headset-mic">
- 	<path name="amic2" />
+        <path name="amic2" />
     </path>
 
     <path name="speaker-and-headphones">
@@ -2988,30 +3218,30 @@
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC0" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC1_MIXER Switch" value="1" />
-	<ctl name="TX DEC1 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX1" value="ADC2" />
-	<ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-	<ctl name="ADC2_MIXER Switch" value="1" />
-	<ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="ADC2" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
      </path>
 
     <path name="speaker-dmic-endfire">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-	<ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC1 Volume" value="6" />
     	<ctl name="ADC2 Volume" value="6" />
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC0" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC1_MIXER Switch" value="1" />
-	<ctl name="TX DEC1 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX1" value="ADC2" />
-	<ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-	<ctl name="ADC2_MIXER Switch" value="1" />
-	<ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="ADC2" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="dmic-endfire">
@@ -3025,15 +3255,15 @@
 
     <path name="speaker-stereo-dmic-ef">
     	<ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC0" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC1_MIXER Switch" value="1" />
-	<ctl name="TX DEC1 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX1" value="ADC2" />
-	<ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-	<ctl name="ADC2_MIXER Switch" value="1" />
-	<ctl name="ADC2 MUX" value="INP3" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="ADC2" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="voice-dmic-ef-tmus">
@@ -3174,7 +3404,7 @@
     </path>
 
     <path name="unprocessed-headset-mic">
-	<path name="amic2" />
+        <path name="amic2" />
     </path>
 
     <!-- USB TTY start -->
@@ -3205,6 +3435,10 @@
     <!-- Added for ADSP testfwk -->
     <path name="ADSP testfwk">
         <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+
+    <path name="audio-playback-voip bt-a2dp">
+        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
 </mixer>
