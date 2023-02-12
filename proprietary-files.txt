@@ -347,6 +347,7 @@ vendor/firmware/CAMERA_ICP.elf
 -vendor/lib64/camera/com.qti.sensor.ofilm_imx682.so
 -vendor/lib64/camera/com.qti.sensor.ofilm_ov02b1b.so
 -vendor/lib64/camera/com.qti.sensor.ofilm_s5k3t2.so
+-vendor/lib64/camera/com.qti.sensor.aac_hi259.so
 -vendor/lib64/camera/com.qti.sensor.sunny_hi1337.so
 -vendor/lib64/camera/com.qti.sensor.sunny_imx682.so
 -vendor/lib64/camera/com.qti.sensor.sunny_s5k3t2.so

@@ -64,7 +64,7 @@ on init
 
     # Configure default schedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.boost 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
     # Report max frequency to unity tasks
@@ -99,11 +99,6 @@ on property:init.svc.vendor.charger=running
 on enable-low-power
     # Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
-
-    # Set the default IRQ affinity to the silver cluster. When a
-    # CPU is isolated/hotplugged, the IRQ affinity is adjusted
-    # to one of the CPU from the default IRQ affinity mask.
-    write /proc/irq/default_smp_affinity 3f
 
     # Setting b.L scheduler parameters
     write /proc/sys/kernel/sched_downmigrate 85
@@ -199,9 +194,7 @@ on enable-low-power
 
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
-    write /sys/block/sda/queue/iostats 1
     write /sys/block/sde/queue/nr_requests 128
-    write /sys/block/sde/queue/iostats 1
 
     # Set swappiness to 100
     write /proc/sys/vm/swappiness 100
