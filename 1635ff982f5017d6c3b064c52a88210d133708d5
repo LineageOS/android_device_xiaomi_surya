@@ -16,6 +16,24 @@
       "message": "this seems to have snuck in. Doesn\u0027t belong into this commit",
       "revId": "1635ff982f5017d6c3b064c52a88210d133708d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1c5d3c1_8557bd10",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 350,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-02-13T19:27:44Z",
+      "side": 1,
+      "message": "Yes, thanks, fixed.",
+      "parentUuid": "b4ff3364_0052fa8b",
+      "revId": "1635ff982f5017d6c3b064c52a88210d133708d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
