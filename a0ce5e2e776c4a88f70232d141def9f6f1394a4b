@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85993a23_30bd77c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-02-19T10:42:59Z",
+      "side": 1,
+      "message": "\u003e Patch Set 4: Code-Review-2\n\u003e \n\u003e Sure, just fix your alphabet, since R goes after N...\n\nIndeed! Thanks for pointing out.\n",
+      "revId": "a0ce5e2e776c4a88f70232d141def9f6f1394a4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
