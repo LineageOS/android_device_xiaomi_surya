@@ -196,8 +196,8 @@ on enable-low-power
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sde/queue/nr_requests 128
 
-    # Set swappiness to 100
-    write /proc/sys/vm/swappiness 100
+    # Set swappiness to 60
+    write /proc/sys/vm/swappiness 60
 
     # Set cpuset parameters
     write /dev/cpuset/top-app/cpus 0-7
