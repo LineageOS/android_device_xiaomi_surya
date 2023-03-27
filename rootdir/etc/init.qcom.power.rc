@@ -228,6 +228,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
+    disabled
     oneshot
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
