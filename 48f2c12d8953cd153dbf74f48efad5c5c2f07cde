@@ -16,6 +16,29 @@
       "message": "Wrong metadata - authorship, change-id, ...\n\"Inspired by\" is the wrong way to apply a patch, even if AOSP also does this sometimes...",
       "revId": "48f2c12d8953cd153dbf74f48efad5c5c2f07cde",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89f5f78f_ae48c455",
+        "filename": "overlay/J20CFrameworks/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-04-28T18:50:41Z",
+      "side": 1,
+      "message": "and twice the same row, it seems",
+      "range": {
+        "startLine": 590,
+        "startChar": 0,
+        "endLine": 590,
+        "endChar": 112
+      },
+      "revId": "48f2c12d8953cd153dbf74f48efad5c5c2f07cde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
