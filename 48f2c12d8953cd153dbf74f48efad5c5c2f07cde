@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eeded525_d086d0e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-04-28T17:46:18Z",
+      "side": 1,
+      "message": "Wrong metadata - authorship, change-id, ...\n\"Inspired by\" is the wrong way to apply a patch, even if AOSP also does this sometimes...",
+      "revId": "48f2c12d8953cd153dbf74f48efad5c5c2f07cde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
