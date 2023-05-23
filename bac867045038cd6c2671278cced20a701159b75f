@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a01bb70_f2a3a94b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-05-23T09:29:01Z",
+      "side": 1,
+      "message": "Looks good to me, if no other comments, will merge after blobs side is pulled.",
+      "revId": "bac867045038cd6c2671278cced20a701159b75f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
