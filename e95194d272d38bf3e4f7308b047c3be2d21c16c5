@@ -16,6 +16,24 @@
       "message": "??",
       "revId": "e95194d272d38bf3e4f7308b047c3be2d21c16c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8427d69e_9bcab86d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-06-07T14:33:17Z",
+      "side": 1,
+      "message": "Only b/w lens works correctly since FW 13+",
+      "parentUuid": "4ab349d1_f4174b28",
+      "revId": "e95194d272d38bf3e4f7308b047c3be2d21c16c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
