@@ -34,6 +34,24 @@
       "parentUuid": "4ab349d1_f4174b28",
       "revId": "e95194d272d38bf3e4f7308b047c3be2d21c16c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a18ba442_1b80e443",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-06-07T14:34:10Z",
+      "side": 1,
+      "message": "Did you also update camera stack to MIUI 13?",
+      "parentUuid": "8427d69e_9bcab86d",
+      "revId": "e95194d272d38bf3e4f7308b047c3be2d21c16c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
