@@ -52,6 +52,24 @@
       "parentUuid": "8427d69e_9bcab86d",
       "revId": "e95194d272d38bf3e4f7308b047c3be2d21c16c5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82918a18_fa0dbd99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2023-06-07T14:41:20Z",
+      "side": 1,
+      "message": "Yes, blobs have been updated. There are no link errors in logs too.\nThis is the most relevant error:\nCamX    : [ERROR][SENSOR ] camximagesensordata.cpp:1438 GetSensorStaticCapability() lxl04 cap_physize.w\u003d7.398400,h\u003d5.555200,sensorName\u003dofilm_imx682\nCamX    : [ERROR][Assert ] camxnode.cpp:7445 UpdateDeviceIndices(): 0 !\u003d deviceCount",
+      "parentUuid": "a18ba442_1b80e443",
+      "revId": "e95194d272d38bf3e4f7308b047c3be2d21c16c5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
