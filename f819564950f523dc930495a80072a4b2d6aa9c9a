@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b97034d_b1b4ce34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-06-30T17:25:05Z",
+      "side": 1,
+      "message": "Depends on the commits 360469, 360470, 360472.\nBrings back the setting FPS setting \"Touch to unlock at any time\".",
+      "revId": "f819564950f523dc930495a80072a4b2d6aa9c9a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
