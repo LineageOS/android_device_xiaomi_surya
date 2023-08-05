@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c66b697b_244b9da3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2023-08-05T13:09:09Z",
+      "side": 1,
+      "message": "Fix build in user variant\n\nError:\nstderr:ERROR: files are incompatible: Runtime info and framework compatibility matrix are incompatible: No compatible kernel requirement found (kernel FCM version \u003d 5).\nFor kernel requirements at matrix level 5, For config CONFIG_DEBUG_FS, value \u003d y but required n",
+      "revId": "ca2ebb8f0dd761576076ac81431857206e6af6c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
