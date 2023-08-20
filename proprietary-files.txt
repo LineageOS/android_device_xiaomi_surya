@@ -380,6 +380,9 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so;FIX_S
 
 # NFC
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp-pnscr.conf
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
