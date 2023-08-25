@@ -1,4 +1,4 @@
-# All blobs below are extracted from Surya Global V13.0.4.0.SJGEUXM, unless pinned
+# All blobs below are extracted from Surya Global V14.0.5.0.SJGEUXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
