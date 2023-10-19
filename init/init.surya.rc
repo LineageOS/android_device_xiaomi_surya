@@ -10,10 +10,9 @@ on property:ro.boot.product.hardware.sku=surya
 on property:ro.boot.hwversion=*
     setprop vendor.boot.hwversion ${ro.boot.hwversion}
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
-    class hal
+    class early_hal
     user nfc
-    group nfc
-    task_profiles ServiceCapacityLow
+    group nfc drmrpc system
     disabled
