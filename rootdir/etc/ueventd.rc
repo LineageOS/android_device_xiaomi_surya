@@ -100,6 +100,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_rtac             0660   system     audio
 /dev/avtimer              0660   system     audio
 
+# Charger
+/sys/class/power_supply/battery input_suspend 0660 system system
+
 # NFC permissions
 /dev/nq-nci               0660    nfc         nfc
 
