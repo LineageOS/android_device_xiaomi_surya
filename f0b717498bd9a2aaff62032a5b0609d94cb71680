@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba3ee872_48023f62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33452
+      },
+      "writtenOn": "2024-02-08T22:33:57Z",
+      "side": 1,
+      "message": "Fair warning: This is the first time I have ever touched and built Android and LineageOS. I do not have a solid understanding of all the details, I just pieced this together by looking through related changes in LineageOS repos.\n\nI did however test this on my Poco X3 NFC, and with these changes I can set a charging limit, the phone stops charging when reaching the limit, and it starts charging again when dropping 10 percentage points under the limit, so to me it looks like it works as intended.",
+      "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
