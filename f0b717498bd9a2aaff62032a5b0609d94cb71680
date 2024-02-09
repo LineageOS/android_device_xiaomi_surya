@@ -33,6 +33,23 @@
       "message": "looks good to me, builds and seems to work",
       "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54335798_3e686949",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-02-09T17:39:46Z",
+      "side": 1,
+      "message": "I70cc903a03ac9fa3303bb8fa039c9de4806449bf already exists (for authorship) and I don\u0027t think you need so many flags for it. All that was needed for sm6150-common was TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS :\u003d false",
+      "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
