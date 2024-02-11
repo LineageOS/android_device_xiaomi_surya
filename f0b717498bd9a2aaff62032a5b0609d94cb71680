@@ -50,6 +50,24 @@
       "message": "I70cc903a03ac9fa3303bb8fa039c9de4806449bf already exists (for authorship) and I don\u0027t think you need so many flags for it. All that was needed for sm6150-common was TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS :\u003d false",
       "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2f40075_c81ce192",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33452
+      },
+      "writtenOn": "2024-02-11T12:42:57Z",
+      "side": 1,
+      "message": "I\u0027ve removed the variables that seemed redundant and successfully tested it.\nNot sure what you want to tell me with that link though.",
+      "parentUuid": "54335798_3e686949",
+      "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
