@@ -86,6 +86,24 @@
       "parentUuid": "d2f40075_c81ce192",
       "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23186f01_7f02c8eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33452
+      },
+      "writtenOn": "2024-02-12T15:48:17Z",
+      "side": 1,
+      "message": "ffs, can you please clarify what you want from me? The Change-Id comes from repo afaik and the author info from git, so what is incorrect about them?\nAre you implying this is a copy of the commits submitted under that Change-Id? If so, you are mistaken - while I would have appreciated if the response I was given in IRC/Discord had consisted of this link instead of passive-aggressiveness from luk, I was not aware of these commits until after I put my weekend into getting this to work.\nObviously those changes still are extremely similar, but they do the same thing, so how wouldn\u0027t they.\n\nThe commit tile I chose to be similar to https://github.com/LineageOS/android_device_oneplus_sdm845-common/commit/9aa837941ecad69eaebfd53aa9582efb45ced66a which is pretty much the only charging limits related change I found via Google.",
+      "parentUuid": "28791402_dfcd561d",
+      "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
