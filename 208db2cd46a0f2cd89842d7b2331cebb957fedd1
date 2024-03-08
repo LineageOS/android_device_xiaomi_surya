@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b7894ec_75b8ed2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-03-08T12:43:23Z",
+      "side": 1,
+      "message": "Waiting for more feedback on patchset 3",
+      "revId": "208db2cd46a0f2cd89842d7b2331cebb957fedd1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}

@@ -50,6 +50,24 @@
       "message": "Why is socinfo necessary for this?",
       "revId": "8a2c691b56ab7f5038a0bad8a593e3552874f396",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "904c5898_913e8dae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-03-08T12:43:23Z",
+      "side": 1,
+      "message": "Probably uneeded, waiting for verification that works without",
+      "parentUuid": "5a4c2e07_826244d8",
+      "revId": "8a2c691b56ab7f5038a0bad8a593e3552874f396",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
