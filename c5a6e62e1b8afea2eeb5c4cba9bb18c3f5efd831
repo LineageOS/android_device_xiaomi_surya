@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9bbf912d_eb95cb69",
+        "filename": "configs/hidl/manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-03-19T08:01:55Z",
+      "side": 1,
+      "message": "You could\u0027ve used fqname...",
+      "range": {
+        "startLine": 159,
+        "startChar": 8,
+        "endLine": 163,
+        "endChar": 20
+      },
+      "revId": "c5a6e62e1b8afea2eeb5c4cba9bb18c3f5efd831",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
