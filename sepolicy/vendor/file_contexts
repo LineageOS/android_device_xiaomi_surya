@@ -17,10 +17,10 @@
 /data/vendor/goodix(/.*)?                                            u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                               u:object_r:fingerprint_data_file:s0
 /data/vendor/fpdump(/.*)?                                            u:object_r:fingerprint_data_file:s0
-/sys/devices/soc/soc:fpc1020.*/irq                                   u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc1020.*/hw_reset                              u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc1020.*/fingerdown_wait                       u:object_r:fingerprint_device:s0
-/sys/devices/soc/soc:fpc1020.*/wakeup_enable                         u:object_r:fingerprint_device:s0
+/sys/devices/soc/soc:fpc1020.*/irq                                   u:object_r:fingerprint_sysfs_device:s0
+/sys/devices/soc/soc:fpc1020.*/hw_reset                              u:object_r:fingerprint_sysfs_device:s0
+/sys/devices/soc/soc:fpc1020.*/fingerdown_wait                       u:object_r:fingerprint_sysfs_device:s0
+/sys/devices/soc/soc:fpc1020.*/wakeup_enable                         u:object_r:fingerprint_sysfs_device:s0
 
 # Wakeup
 /sys/devices/platform/soc/884000.i2c/i2c-[0-9]/[-0-9a-f]+/wakeup/wakeup[0-9]+/.* u:object_r:sysfs_power:s0
