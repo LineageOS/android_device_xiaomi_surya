@@ -104,6 +104,24 @@
       "parentUuid": "28791402_dfcd561d",
       "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1122f93_ed0828b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-04-05T15:02:18Z",
+      "side": 1,
+      "message": "ne meant that you should pick that commit in order to give proper credits to whom originated it and not make a new commit. its not a technical comment but style related",
+      "parentUuid": "d2f40075_c81ce192",
+      "revId": "f0b717498bd9a2aaff62032a5b0609d94cb71680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
