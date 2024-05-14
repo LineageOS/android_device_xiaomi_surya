@@ -34,6 +34,24 @@
       "parentUuid": "2443b2e9_ac1fc5ea",
       "revId": "e19773564bb80577805f4fb63c5d8f68ddca1277",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "580fd3bf_9e45b6d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-05-14T14:09:18Z",
+      "side": 1,
+      "message": "Updated commit msg. Wouldn\u0027t be a bit too complex in the wiki to ask to push files from two different firmwares?",
+      "parentUuid": "2443b2e9_ac1fc5ea",
+      "revId": "e19773564bb80577805f4fb63c5d8f68ddca1277",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
