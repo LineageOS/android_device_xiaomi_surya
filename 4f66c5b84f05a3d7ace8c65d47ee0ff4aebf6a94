@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "546d6bf3_13ff13ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2024-05-22T16:57:03Z",
+      "side": 1,
+      "message": "aop is one of the few exceptions I expect the binary to keep working even with different fw, it\u0027s standalone",
+      "revId": "4f66c5b84f05a3d7ace8c65d47ee0ff4aebf6a94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
