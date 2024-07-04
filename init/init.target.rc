@@ -93,6 +93,10 @@ on boot
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/hw_reset
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
 
+    # Allow system to modify double tap node
+    chmod 0664 /sys/touchpanel/double_tap
+    chown system system /sys/touchpanel/double_tap
+
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
