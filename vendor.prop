@@ -200,10 +200,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# Media
-debug.stagefright.ccodec=1
-debug.stagefright.omx_default_rank=0
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
