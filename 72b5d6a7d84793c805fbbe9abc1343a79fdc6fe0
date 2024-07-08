@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a720120_1a41d79c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27025
+      },
+      "writtenOn": "2024-07-08T09:22:48Z",
+      "side": 1,
+      "message": "but msmnile doesn\u0027t have aidl ims?",
+      "revId": "72b5d6a7d84793c805fbbe9abc1343a79fdc6fe0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
