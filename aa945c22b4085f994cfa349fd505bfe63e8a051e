@@ -16,6 +16,24 @@
       "message": "why???",
       "revId": "aa945c22b4085f994cfa349fd505bfe63e8a051e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8475e404_7ce5c543",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-07-08T09:10:06Z",
+      "side": 1,
+      "message": "Doesn\u0027t work as of LOS21 and, anyway, it\u0027s not there even on sm6150-common",
+      "parentUuid": "da7e3277_781b1fe4",
+      "revId": "aa945c22b4085f994cfa349fd505bfe63e8a051e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
