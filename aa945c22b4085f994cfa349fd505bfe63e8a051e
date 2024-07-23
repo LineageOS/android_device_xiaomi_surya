@@ -52,6 +52,24 @@
       "parentUuid": "2651239f_033b65a5",
       "revId": "aa945c22b4085f994cfa349fd505bfe63e8a051e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd769c56_285415be",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-07-23T12:15:56Z",
+      "side": 0,
+      "message": "I see, but yet it fails due to duplicates. The \"duplicate\" comes from msmsteppe, where those are defined.",
+      "parentUuid": "9a9579a7_b1c8cd25",
+      "revId": "aa945c22b4085f994cfa349fd505bfe63e8a051e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
