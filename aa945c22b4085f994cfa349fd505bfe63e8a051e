@@ -16,6 +16,24 @@
       "message": "This does not seem to be duplicated in QCOM\u0027s sepolicy",
       "revId": "aa945c22b4085f994cfa349fd505bfe63e8a051e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2651239f_033b65a5",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 28837
+      },
+      "writtenOn": "2024-07-23T09:18:43Z",
+      "side": 0,
+      "message": "Nope, each one of those lines causes a duplicate error building, i tested them one by one.",
+      "parentUuid": "c81ab754_e152cdc2",
+      "revId": "aa945c22b4085f994cfa349fd505bfe63e8a051e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
