@@ -1,5 +1,9 @@
 # All blobs below are extracted from Surya Global V14.0.5.0.SJGEUXM, unless pinned
 
+# Current blobs with ELF checks disabled:
+# imsdatadaemon, libcne, libwqe, lowi-server depend on libwpa_client, which is a gnu makefile target
+# libOmxVpp depends on libOmxCore, which is a gnu makefile target
+
 # ADSP
 -vendor/bin/adsprpcd
 -vendor/bin/cdsprpcd
@@ -153,21 +157,21 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 
 # Camera
 -vendor/lib64/hw/camera.qcom.so
--vendor/lib64/hw/com.qti.chi.override.so
+-vendor/lib64/hw/com.qti.chi.override.so;DISABLE_CHECKELF
 -vendor/lib64/libFaceGrade.so
 -vendor/lib64/libHalSuperSensorServer.so
 -vendor/lib64/libSNPE.so
 -vendor/lib64/libSuperSensor.so
 -vendor/lib64/libSuperSensorCPU.so
 -vendor/lib64/libVDClearShot.so
--vendor/lib64/libVDSuperPhotoAPI.so
+-vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
 -vendor/lib64/libXMFD_AgeGender.so
 -vendor/lib64/lib_denoiser3.so
--vendor/lib64/libalAILDC.so
+-vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
 -vendor/lib64/libalCFR.so
--vendor/lib64/libalLDC.so
--vendor/lib64/libalRnBRT_GL_GBWRAPPER.so
--vendor/lib64/libalhLDC.so
+-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+-vendor/lib64/libalRnBRT_GL_GBWRAPPER.so;DISABLE_CHECKELF
+-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 -vendor/lib64/libarcsat.so
 -vendor/lib64/libarcsoft_beautyshot.so
 -vendor/lib64/libarcsoft_bodyslim.so
@@ -196,16 +200,16 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -vendor/lib64/libcom.qti.chinodeutils.so
 -vendor/lib64/libdng_sdk2vendor.so
 -vendor/lib64/libft2vendor.so
--vendor/lib64/libhvx_interface.so
+-vendor/lib64/libhvx_interface.so;DISABLE_CHECKELF
 -vendor/lib64/libmiStereoFactoryRemapLib.so
 -vendor/lib64/libmiai_portraitsupernight.so
 -vendor/lib64/libmiai_supernight.so
 -vendor/lib64/libmialgo_basic.so
 -vendor/lib64/libmialgo_fs.so
--vendor/lib64/libmialgo_rfs.so
+-vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
 -vendor/lib64/libmialgo_sd.so
 -vendor/lib64/libmialgo_utils.so
--vendor/lib64/libmialgoengine.so
+-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 -vendor/lib64/libmibokeh_712.so
 -vendor/lib64/libmpbase.so
 -vendor/lib64/libremosaic_wrapper.so
@@ -405,11 +409,11 @@ vendor/app/IWlanService/IWlanService.apk
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
 vendor/etc/init/cnd.rc
--vendor/lib64/libcne.so
+-vendor/lib64/libcne.so;DISABLE_CHECKELF
 -vendor/lib64/libcneapiclient.so
 -vendor/lib64/libcneoplookup.so
 -vendor/lib64/libwms.so
--vendor/lib64/libwqe.so
+-vendor/lib64/libwqe.so;DISABLE_CHECKELF
 -vendor/lib64/libxml.so
 -vendor/lib64/vendor.qti.data.factory@2.0.so
 -vendor/lib64/vendor.qti.data.factory@2.1.so
@@ -540,7 +544,7 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 -vendor/lib64/hw/fingerprint.fpc.default.so
--vendor/lib64/hw/fingerprint.goodix.default.so
+-vendor/lib64/hw/fingerprint.goodix.default.so;DISABLE_CHECKELF
 -vendor/lib64/libgf_ca.so
 -vendor/lib64/libgf_hal.so
 -vendor/lib64/libgoodixhwfingerprint.so
@@ -601,7 +605,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 
 # GPS
 -vendor/bin/loc_launcher
--vendor/bin/lowi-server
+-vendor/bin/lowi-server;DISABLE_CHECKELF
 -vendor/bin/slim_daemon
 -vendor/bin/xtra-daemon
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
@@ -643,7 +647,7 @@ vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/priv-app/ims/ims.apk
 -vendor/bin/ims_rtp_daemon
--vendor/bin/imsdatadaemon
+-vendor/bin/imsdatadaemon;DISABLE_CHECKELF
 -vendor/bin/imsqmidaemon
 -vendor/bin/imsrcsd
 vendor/etc/init/ims_rtp_daemon.rc
@@ -702,7 +706,7 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # IR
--vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so;DISABLE_CHECKELF
 
 # IRQ balance
 -vendor/bin/msm_irqbalance
@@ -737,7 +741,7 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libOmxDsdDec.so
 -vendor/lib/libOmxEvrcDec.so
 -vendor/lib/libOmxQcelp13Dec.so
--vendor/lib/libOmxVpp.so
+-vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
 -vendor/lib/libmmosal.so
