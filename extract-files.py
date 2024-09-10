@@ -59,6 +59,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed("libcamera_provider_shim.so"),
     'vendor/lib64/libalRnBRT_GL_GBWRAPPER.so': blob_fixup()
         .add_needed("libui_shim.so"),
+    ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
+        .add_needed("libcrypto_shim.so"),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
