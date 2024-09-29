@@ -178,6 +178,10 @@ persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=0
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|920|220|local:4630946688386997377,1080|920|220|local:4630946772315683201
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
