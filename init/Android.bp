@@ -4,49 +4,8 @@
 //
 
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "fstab.qcom",
-    vendor: true,
-    ramdisk_available: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.power.rc",
-    src: "init.qcom.power.rc",
+    name: "init.surya.rc",
+    src: "init.surya.rc",
     sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "init.qcom.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.target.rc",
-    src: "init.target.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.recovery.qcom.rc",
-    src: "init.recovery.qcom.rc",
-    sub_dir: "init",
-    recovery: true,
-}
-
-prebuilt_etc {
-    name: "ueventd.qcom.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.rc",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.sh",
-    src: "init.qcom.sh",
     vendor: true,
 }
