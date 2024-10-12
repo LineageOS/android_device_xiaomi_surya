@@ -1,2 +1,0 @@
-set_prop(vendor_wcnss_service, vendor_radio_prop)
-set_prop(vendor_wcnss_service, vendor_wcnss_service_prop)
