@@ -18,26 +18,13 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/surya',
-    'hardware/qcom-caf/sm8150',
-    'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
-    'vendor/qcom/opensource/dataservices',
-    'vendor/qcom/opensource/display',
+    'vendor/xiaomi/sm6150-common',
 ]
-
-
-def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
 
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    (
-        'com.qualcomm.qti.dpm.api@1.0',
-        'vendor.qti.hardware.fm@1.0',
-        'vendor.qti.imsrtpservice@3.0',
-    ): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
@@ -78,5 +65,7 @@ module = ExtractUtilsModule(
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device(module)
+    utils = ExtractUtils.device_with_common(
+        module, 'sm6150-common', module.vendor
+    )
     utils.run()
