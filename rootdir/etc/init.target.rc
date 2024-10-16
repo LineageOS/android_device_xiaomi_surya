@@ -47,6 +47,12 @@ on property:ro.boot.product.hardware.sku=surya
 on property:ro.boot.hwversion=*
     setprop vendor.boot.hwversion ${ro.boot.hwversion}
 
+on property:ro.boot.lcmtype=dsi_nt36672c_huaxing_fhd_video_display
+    setprop persist.vendor.fingerprint.sensor_location 1080|920|220|local:4630946688386997377
+
+on property:ro.boot.lcmtype=dsi_nt36672c_tianma_fhd_video_display
+    setprop persist.vendor.fingerprint.sensor_location 1080|920|220|local:4630946772315683201
+
 on fs
     mount_all --early
 
