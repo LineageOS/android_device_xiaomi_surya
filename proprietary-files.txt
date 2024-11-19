@@ -1,8 +1,5 @@
 # All blobs below are extracted from Surya Global V14.0.5.0.SJGEUXM, unless pinned
 
-# Current blobs with ELF checks disabled:
-# com.qti.chi.override, libmialgoengine depends on libgrallocutils, which is a gnu makefile target
-
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
@@ -106,7 +103,7 @@ vendor/etc/init/init.batterysecret.rc
 
 # Camera
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so;DISABLE_CHECKELF
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libFaceGrade.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libSNPE.so
@@ -159,7 +156,7 @@ vendor/lib64/libmialgo_fs.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
+vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libremosaic_wrapper.so
