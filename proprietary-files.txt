@@ -980,6 +980,12 @@ vendor/firmware/novatek_ts_huaxing_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
+# Trusted User Interface
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
 # Vibrator - AW8624
 vendor/bin/vibrator_calibration
 vendor/firmware/aw8624_haptic.bin
