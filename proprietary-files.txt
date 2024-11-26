@@ -202,6 +202,7 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdng_sdk2vendor.so
+vendor/lib64/libflaw.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libhvx_interface.so;DISABLE_CHECKELF
 vendor/lib64/libmiStereoFactoryRemapLib.so
