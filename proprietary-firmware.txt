@@ -3,22 +3,22 @@
 
 abl.elf
 aop.mbn
-BTFM.bin
-NON-HLOS.bin
+BTFM.bin:bluetooth.img
+NON-HLOS.bin:modem.img
 abl.elf
 aop.mbn
 cmnlib.mbn
 cmnlib64.mbn
 devcfg.mbn
-dspso.bin
+dspso.bin:dsp.img
 ffu.img
 hyp.mbn
 imagefv.elf
-km4.mbn
-qupv3fw.elf
+km4.mbn:keymaster.img
+qupv3fw.elf:qupfw.img
 storsec.mbn
 tz.mbn
-uefi_sec.mbn
+uefi_sec.mbn:uefisecapp.img
 xbl.elf
 xbl_config.elf
 
