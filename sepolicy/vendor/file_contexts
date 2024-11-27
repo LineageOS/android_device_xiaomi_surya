@@ -45,4 +45,5 @@
 /data/vendor/thermal(/.*)?                                           u:object_r:thermal_data_file:s0
  
 # SPI IR
-/dev/spidev0.1                                                    u:object_r:spidev_device:s0
+/dev/spidev0.1[0-9]+                                              u:object_r:lirc_device:s0
+/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi              u:object_r:hal_ir_default_exec:s0
