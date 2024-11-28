@@ -1,0 +1,191 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f51265f9_8ca73db3",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "This is already in shared_libs",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d6cf892_ad6d23c8",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7ca6009_03a64691",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ecd434fa_0b56e535",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c423a92_9518dc52",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "861ee067_1b7ad11d",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "maybe get rid of the whitespace at the end too",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1019b72d_3e66e756",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "You can probably drop this too? 1.3 is in shared_libs",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71b87302_1b9d52b5",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "This is already in shared_libs",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc3bb223_a78bf482",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ede513f_fcb65377",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b969493_c3d3201f",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:44:23Z",
+      "side": 1,
+      "message": "You can drop these two in a follow-up commit - I0a34776c3354e37c6ae3d2b9eca9150d902b99fc",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
