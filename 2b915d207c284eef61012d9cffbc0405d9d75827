@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "481ec557_66eed390",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-11-28T23:19:06Z",
+      "side": 1,
+      "message": "Same thing with the proprietary-files: in the commit message, drop that. But why this patch as a whole? I don\u0027t think it\u0027s needed and you don\u0027t even add the manifest entry",
+      "revId": "2b915d207c284eef61012d9cffbc0405d9d75827",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
