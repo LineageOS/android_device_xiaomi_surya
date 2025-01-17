@@ -16,6 +16,24 @@
       "message": "Same thing with the proprietary-files: in the commit message, drop that. But why this patch as a whole? I don\u0027t think it\u0027s needed and you don\u0027t even add the manifest entry",
       "revId": "2b915d207c284eef61012d9cffbc0405d9d75827",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "514104c8_ce3f630b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T19:45:52Z",
+      "side": 1,
+      "message": "needed by libsecureui_svcsock\nalso manifest is added already, idk why blob missed\nhttps://github.com/LineageOS/android_device_xiaomi_surya/blob/7c7ac06695889d30b42f84962957da454e47dd47/configs/hidl/manifest.xml#L249",
+      "parentUuid": "481ec557_66eed390",
+      "revId": "2b915d207c284eef61012d9cffbc0405d9d75827",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
