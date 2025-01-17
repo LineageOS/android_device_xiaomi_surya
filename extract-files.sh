@@ -83,6 +83,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcamera_provider_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
             ;;
+
+	vendor/lib64/libalRnBRT_GL_GBWRAPPER.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
         *)
             return 1
             ;;

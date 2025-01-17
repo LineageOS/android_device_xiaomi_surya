@@ -173,7 +173,7 @@ vendor/lib64/lib_denoiser3.so
 vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
 vendor/lib64/libalCFR.so
 vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-vendor/lib64/libalRnBRT_GL_GBWRAPPER.so;DISABLE_CHECKELF
+vendor/lib64/libalRnBRT_GL_GBWRAPPER.so
 vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libarcsat.so
 vendor/lib64/libarcsoft_beautyshot.so

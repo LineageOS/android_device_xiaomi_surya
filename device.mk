@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
     libmegface
 
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    libpiex_shim \
+    libui_shim.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
