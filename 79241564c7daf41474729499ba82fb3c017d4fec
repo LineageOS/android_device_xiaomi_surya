@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd6a657c_8690c2c6",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f51265f9_8ca73db3",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5d6cf892_ad6d23c8",
@@ -48,6 +66,24 @@
       "writtenOn": "2024-11-28T23:44:23Z",
       "side": 1,
       "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48c5946f_9779e3c0",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5d6cf892_ad6d23c8",
       "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -69,6 +105,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "02d4de34_6caa89ea",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b7ca6009_03a64691",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ecd434fa_0b56e535",
@@ -82,6 +136,24 @@
       "writtenOn": "2024-11-28T23:44:23Z",
       "side": 1,
       "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b6d6b3f_ab57f2a8",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ecd434fa_0b56e535",
       "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -103,6 +175,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fedb8440_3bf1431d",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c423a92_9518dc52",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "861ee067_1b7ad11d",
@@ -116,6 +206,24 @@
       "writtenOn": "2024-11-28T23:44:23Z",
       "side": 1,
       "message": "maybe get rid of the whitespace at the end too",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "200b1836_16e9ee27",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "861ee067_1b7ad11d",
       "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -154,6 +262,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5659b061_3202d51c",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71b87302_1b9d52b5",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fc3bb223_a78bf482",
@@ -167,6 +293,24 @@
       "writtenOn": "2024-11-28T23:44:23Z",
       "side": 1,
       "message": "Ditto",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b977ce8e_6a149f6f",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc3bb223_a78bf482",
       "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -188,6 +332,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb872082_33fa05ed",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ede513f_fcb65377",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2b969493_c3d3201f",
@@ -201,6 +363,24 @@
       "writtenOn": "2024-11-28T23:44:23Z",
       "side": 1,
       "message": "You can drop these two in a follow-up commit - I0a34776c3354e37c6ae3d2b9eca9150d902b99fc",
+      "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91a2e747_d922db3d",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-17T20:10:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b969493_c3d3201f",
       "revId": "79241564c7daf41474729499ba82fb3c017d4fec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
