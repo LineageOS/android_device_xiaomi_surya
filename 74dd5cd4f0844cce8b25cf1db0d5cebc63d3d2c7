@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "529490c4_12381451",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-01-18T08:39:26Z",
+      "side": 1,
+      "message": "i needed custom patchelf version bcz of this error:\n\"/vendor/lib64/hw/fingerprint.goodix.default.so\" loaded phdr 0x77f17e6000 not in loadable segment.",
+      "revId": "74dd5cd4f0844cce8b25cf1db0d5cebc63d3d2c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
