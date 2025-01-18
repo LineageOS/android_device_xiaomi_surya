@@ -73,25 +73,26 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
-
-	vendor/lib64/libgoodixhwfingerprint.so)
+        vendor/lib64/libgoodixhwfingerprint.so)
             [ "$2" = "" ] && return 0
-            grep -q "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}" && ${PATCHELF_0_17_2} --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
+            grep -q "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}" && \
+                ${PATCHELF_0_17_2} --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" \
+                "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
             ;;
-
-	vendor/lib64/android.hardware.camera.provider@2.4-legacy.so)
+        vendor/lib64/android.hardware.camera.provider@2.4-legacy.so)
             [ "$2" = "" ] && return 0
-            grep -q "libcamera_provider_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
+            grep -q "libcamera_provider_shim.so" "${2}" || \
+                "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
             ;;
-
-	vendor/lib64/libalRnBRT_GL_GBWRAPPER.so)
+        vendor/lib64/libalRnBRT_GL_GBWRAPPER.so)
             [ "$2" = "" ] && return 0
-            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            grep -q "libui_shim.so" "${2}" || \
+                "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
-    vendor/lib64/hw/fingerprint.goodix.default.so)
-        [ "$2" = "" ] && return 0
-        "${PATCHELF_0_17_2}" --set-soname "fingerprint.goodix.default.so" "${2}"
-        ;;
+        vendor/lib64/hw/fingerprint.goodix.default.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname "fingerprint.goodix.default.so" "${2}"
+            ;;
         *)
             return 1
             ;;
@@ -102,12 +103,13 @@ function blob_fixup() {
 
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+
 if [ -z "${ONLY_FIRMWARE}" ]; then
-	extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 if [ -z "${ONLY_TARGET}" ]; then
-	extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"
+    extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
