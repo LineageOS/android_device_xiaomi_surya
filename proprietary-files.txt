@@ -546,8 +546,8 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 # Fingerprint
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc.default.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix.default.so:vendor/lib64/hw/fingerprint.goodix.sm6150.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
