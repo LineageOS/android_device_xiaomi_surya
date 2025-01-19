@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "766fa53c_95e6db98",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-01-19T16:13:07Z",
+      "side": 1,
+      "message": "The commit was updated, refer to the latest PS.",
+      "revId": "87656aa7d66db7a16d7513f64e63f5a19f42dab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
