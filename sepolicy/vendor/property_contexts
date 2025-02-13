@@ -45,3 +45,6 @@ sys.thermal.			   u:object_r:vendor_thermal_normal_prop:s0
 vendor.sys.thermal.		   u:object_r:vendor_thermal_normal_prop:s0
 persist.sys.thermal.config	   u:object_r:vendor_thermal_normal_prop:s0
 
+
+# WiFi
+persist.vendor.cnss-daemon.        u:object_r:vendor_wcnss_service_prop:s0
