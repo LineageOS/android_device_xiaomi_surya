@@ -27,6 +27,9 @@
 #
 #
 
+on early-init
+    setprop vendor.usb.product_string ${ro.product.vendor.model}
+
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
