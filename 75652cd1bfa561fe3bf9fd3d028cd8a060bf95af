@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e52a172b_708c6145",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-04-07T18:36:12Z",
+      "side": 1,
+      "message": "this was also for MiuiCamera, wouldn\u0027t hurt to have but just making sure you know why this was picked on sm6150-common",
+      "revId": "75652cd1bfa561fe3bf9fd3d028cd8a060bf95af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
