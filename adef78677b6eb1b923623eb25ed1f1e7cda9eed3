@@ -16,6 +16,24 @@
       "message": "you should be able to drop that too",
       "revId": "adef78677b6eb1b923623eb25ed1f1e7cda9eed3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6ec67b4_8b37adda",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-04-07T19:53:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d2fdc4d0_3ecc6fc1",
+      "revId": "adef78677b6eb1b923623eb25ed1f1e7cda9eed3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
