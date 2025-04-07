@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3be9cbfb_ab95de41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-04-07T18:34:26Z",
+      "side": 1,
+      "message": "hmm, do you need this? I only needed this because I ran into a neverallow with MiuiCamera. not sure if you use it.",
+      "revId": "1e43d9342f726c97c0d2526352cc2bf698cb8195",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
