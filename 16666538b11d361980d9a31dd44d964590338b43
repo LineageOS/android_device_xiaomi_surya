@@ -16,6 +16,23 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm6150-common/+/414850/comments/d52fea0e_a965adbf https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm6150-common/+/415903",
       "revId": "16666538b11d361980d9a31dd44d964590338b43",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da916ffd_4f2f948a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-04-07T18:40:59Z",
+      "side": 1,
+      "message": "and you will need https://review.lineageos.org/q/I5381e098af64271f9d71c484262e1710e8fcacea",
+      "revId": "16666538b11d361980d9a31dd44d964590338b43",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
