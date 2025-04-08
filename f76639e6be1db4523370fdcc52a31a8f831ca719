@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c838c81d_38556916",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 34245
+      },
+      "writtenOn": "2025-04-08T08:58:52Z",
+      "side": 1,
+      "message": "i guess surya have 2 display id.",
+      "revId": "f76639e6be1db4523370fdcc52a31a8f831ca719",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
