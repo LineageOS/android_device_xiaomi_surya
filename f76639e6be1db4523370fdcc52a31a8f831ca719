@@ -52,6 +52,24 @@
       "parentUuid": "5a6b3d39_9a2f38d4",
       "revId": "f76639e6be1db4523370fdcc52a31a8f831ca719",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca731fa5_629088a5",
+        "filename": "vendor.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-04-17T21:06:20Z",
+      "side": 1,
+      "message": "you don\u0027t need all of that. you can use single prop. just use comma to define multiple displayid. so you can abandon that new commit\n\nhttps://github.com/crdroidandroid/android_device_xiaomi_surya/blob/0a8f384734487ca75b94ac10de1eb694d1a5781b/properties/vendor.prop#L202",
+      "parentUuid": "9ba9e7fa_c8a93751",
+      "revId": "f76639e6be1db4523370fdcc52a31a8f831ca719",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
