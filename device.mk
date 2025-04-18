@@ -435,7 +435,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     ipacm \
     IPACM_cfg.xml \
-    libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
 
