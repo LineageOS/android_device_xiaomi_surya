@@ -189,7 +189,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor
 
-# Init scripts
+# Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
@@ -201,6 +201,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc \
     init.qcom.sh
+
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_surya)
 
 # Input
 PRODUCT_COPY_FILES += \
