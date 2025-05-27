@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39d6850e_f86c91a5",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-05-27T17:45:26Z",
+      "side": 1,
+      "message": "On a second look you should probably add # Init instead of adding it under # IRQ balance",
+      "revId": "30715afd4ba2737264bfb92b6bb139c82183d6ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
