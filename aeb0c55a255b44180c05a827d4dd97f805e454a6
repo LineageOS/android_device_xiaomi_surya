@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79c7e832_b042391f",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-05-27T22:11:53Z",
+      "side": 1,
+      "message": "Maybe change this to \"Init\" and place it at the end",
+      "revId": "aeb0c55a255b44180c05a827d4dd97f805e454a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
