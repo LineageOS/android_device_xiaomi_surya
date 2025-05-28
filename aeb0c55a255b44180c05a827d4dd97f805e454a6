@@ -16,6 +16,24 @@
       "message": "Maybe change this to \"Init\" and place it at the end",
       "revId": "aeb0c55a255b44180c05a827d4dd97f805e454a6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2c30903_b21662da",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-05-28T07:46:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "79c7e832_b042391f",
+      "revId": "aeb0c55a255b44180c05a827d4dd97f805e454a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
