@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f034c5a9_a4cdd0ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-05-29T11:29:28Z",
+      "side": 1,
+      "message": "you’ll need kernel changes for this chain, no?",
+      "revId": "e0e95150440e45bc8f6cc1713dfd5463de0558cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
