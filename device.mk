@@ -302,8 +302,7 @@ PRODUCT_PACKAGES += \
     KarnaWifiResources \
     SuryaFrameworks \
     SuryaSettingsProvider \
-    SuryaWifiResources \
-    NcmTetheringOverlay
+    SuryaWifiResources
 
 # Partitions
 PRODUCT_PACKAGES += \
