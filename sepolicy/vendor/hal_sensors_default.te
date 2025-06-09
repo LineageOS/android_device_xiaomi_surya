@@ -1,7 +1,0 @@
-vendor_internal_prop(persist_sensors_prop)
-
-allow hal_sensors_default hal_audio_default:unix_stream_socket connectto;
-allow hal_sensors_default audio_socket:sock_file rw_file_perms;
-
-get_prop(hal_sensors_default, persist_sensors_prop)
-get_prop(hal_sensors_default, vendor_adsprpc_prop)
