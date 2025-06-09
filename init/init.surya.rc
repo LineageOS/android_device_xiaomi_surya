@@ -1,31 +1,10 @@
-# Copyright (c) 2016, Code Aurora Forum. All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are met:
-#     * Redistributions of source code must retain the above copyright
-#       notice, this list of conditions and the following disclaimer.
-#     * Redistributions in binary form must reproduce the above copyright
-#       notice, this list of conditions and the following disclaimer in the
-#       documentation and/or other materials provided with the distribution.
-#     * Neither the name of Code Aurora nor
-#       the names of its contributors may be used to endorse or promote
-#       products derived from this software without specific prior written
-#       permission.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
-# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
-# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
-# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
-
 on early-init
+    # Change ownership of hw_recovery related nodes
+    chown system graphics /sys/kernel/debug/dri/0/debug/dump
+    chown system graphics /sys/kernel/debug/dri/0/debug/recovery_reg
+    chown system graphics /sys/kernel/debug/dri/0/debug/recovery_dbgbus
+    chown system graphics /sys/kernel/debug/dri/0/debug/recovery_vbif_dbgbus
+
     # Disable EAS
     write /proc/sys/kernel/sched_energy_aware 0
 
@@ -33,47 +12,18 @@ on init
     # Disable powersaving
     write /sys/module/lpm_levels/parameters/sleep_disabled 1
 
-    # Create cgroup mount point for memory
-    mkdir /sys/fs/cgroup/memory/bg 0750 root system
-    write /sys/fs/cgroup/memory/bg/memory.swappiness 140
-    write /sys/fs/cgroup/memory/bg/memory.move_charge_at_immigrate 1
-    chown root system /sys/fs/cgroup/memory/bg/tasks
-    chmod 0660 /sys/fs/cgroup/memory/bg/tasks
-
-    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
-    # Boot time fs tuning
-    write /sys/block/sda/queue/iostats 0
-    write /sys/block/sda/queue/scheduler cfq
-    write /sys/block/sda/queue/iosched/slice_idle 0
-    write /sys/block/sda/queue/nr_requests 256
-    write /sys/block/sde/queue/iostats 0
-    write /sys/block/sde/queue/scheduler cfq
-    write /sys/block/sde/queue/iosched/slice_idle 0
-    write /sys/block/sde/queue/nr_requests 256
-
-    # Configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
-
-    # Configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
-
-    # Configure default schedTune value for foreground/top-app
-    write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 1
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-
     # Report max frequency to unity tasks
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
-on boot
-    # Create hvdcp_opti directory
-    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
+on init && property:ro.boot.hwname=surya
+    setprop ro.boot.product.hardware.sku surya
+
+on init && property:ro.boot.hwname=karna
+    setprop ro.boot.product.hardware.sku karna
+
+on property:ro.boot.product.hardware.sku=surya
+    enable vendor.nfc_hal_service
 
 on property:init.svc.vendor.charger=running
     # Keep one LITTLE and one big
@@ -212,20 +162,15 @@ on enable-low-power
 on property:sys.boot_completed=1
     trigger enable-low-power
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
-    class core
-    user root
-    group root
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
     task_profiles ServiceCapacityLow
-
-service vendor.power_off_alarm /vendor/bin/power_off_alarm
-    class core
-    group system
     disabled
-    oneshot
 
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
+service mi_thermald /vendor/bin/mi_thermald
+    class core
     user root
-    group system wakelock
-    task_profiles ServiceCapacityLow
+    group system
