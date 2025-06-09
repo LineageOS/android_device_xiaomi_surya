@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "650d9e32_716a5942",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-06-09T10:32:48Z",
+      "side": 0,
+      "message": "testing with surya kernel for now",
+      "revId": "fc738834ef774175ae28be0e27cb1750586f8502",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
