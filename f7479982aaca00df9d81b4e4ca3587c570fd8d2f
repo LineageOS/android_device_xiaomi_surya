@@ -16,6 +16,24 @@
       "message": "The ref you provided isn\u0027t present in the kernel/4.14 then how it could break  rndis?",
       "revId": "f7479982aaca00df9d81b4e4ca3587c570fd8d2f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "316583a5_2251e406",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-06-10T13:33:19Z",
+      "side": 1,
+      "message": "its device side, issue is from linux desktops which had that patch in linux package",
+      "parentUuid": "0602d6b9_53a6b84a",
+      "revId": "f7479982aaca00df9d81b4e4ca3587c570fd8d2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
