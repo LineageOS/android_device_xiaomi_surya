@@ -70,6 +70,24 @@
       "parentUuid": "f1959282_55d3089b",
       "revId": "f7479982aaca00df9d81b4e4ca3587c570fd8d2f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7cb3a3d1_9ff73890",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-06-10T14:15:02Z",
+      "side": 1,
+      "message": "afaik its kernel side issue, its stop transfer traffic after 5-10 min",
+      "parentUuid": "7d09b699_1e967964",
+      "revId": "f7479982aaca00df9d81b4e4ca3587c570fd8d2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
