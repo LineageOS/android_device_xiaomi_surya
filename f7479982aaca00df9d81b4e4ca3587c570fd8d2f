@@ -52,6 +52,24 @@
       "parentUuid": "316583a5_2251e406",
       "revId": "f7479982aaca00df9d81b4e4ca3587c570fd8d2f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d09b699_1e967964",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32548
+      },
+      "writtenOn": "2025-06-10T13:41:05Z",
+      "side": 1,
+      "message": "And do you have any idea why ncm isn\u0027t working on sm6150 devices?",
+      "parentUuid": "f1959282_55d3089b",
+      "revId": "f7479982aaca00df9d81b4e4ca3587c570fd8d2f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
