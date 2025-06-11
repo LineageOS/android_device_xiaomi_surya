@@ -16,6 +16,24 @@
       "message": "are you planning to use sm6150 kernel??",
       "revId": "3429d9ad2dd618049613b24b5eb87fab072ce2de",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a6ea6383_ddb026ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-06-11T10:31:29Z",
+      "side": 1,
+      "message": "yes",
+      "parentUuid": "773fed71_2cafadc7",
+      "revId": "3429d9ad2dd618049613b24b5eb87fab072ce2de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
