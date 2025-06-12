@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a821da8_18d19f88",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-06-12T05:40:44Z",
+      "side": 1,
+      "message": "this is available in sm6150-common",
+      "revId": "adf28f67d02cdf348f2dc6e65268d071703cf97e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
