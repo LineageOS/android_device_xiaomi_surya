@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c18c235_acc3aa57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34245
+      },
+      "writtenOn": "2025-06-12T07:33:17Z",
+      "side": 1,
+      "message": "you have deleted powerhint.json",
+      "revId": "d7eb9b1488d2db175ceb533f2f10a48a6464e6ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
