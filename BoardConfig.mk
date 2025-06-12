@@ -31,7 +31,8 @@ ODM_MANIFEST_SURYA_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/surya.config
+TARGET_KERNEL_CONFIG := surya_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
