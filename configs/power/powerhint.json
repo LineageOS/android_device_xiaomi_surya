@@ -188,7 +188,7 @@
     },
     {
       "Name": "DoubleTapToWakeEnable",
-      "Path": "/sys/touchpanel/double_tap",
+      "Path": "/sys/devices/virtual/touch/touch_dev/double_tap",
       "Values": [
         "1",
         "0"
