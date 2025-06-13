@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "191f49fa_bd1bcd9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-06-13T13:16:09Z",
+      "side": 1,
+      "message": "need kernel changes.",
+      "revId": "eac831bf39bcc60ebb3fb310aa5f4a6e295215db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
