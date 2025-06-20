@@ -16,6 +16,24 @@
       "message": "need kernel changes",
       "revId": "95b5c20af4ff862ad5385e418cc25bda4b792b53",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d5f4404_af947d4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25485
+      },
+      "writtenOn": "2025-06-20T16:18:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "53d3c946_ccdf058f",
+      "revId": "95b5c20af4ff862ad5385e418cc25bda4b792b53",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
