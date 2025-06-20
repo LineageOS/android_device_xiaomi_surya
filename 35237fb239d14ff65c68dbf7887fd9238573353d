@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3558380a_e22f309f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-06-20T19:42:40Z",
+      "side": 1,
+      "message": "missed in https://review.lineageos.org/c/LineageOS/android_device_xiaomi_surya/+/432991",
+      "revId": "35237fb239d14ff65c68dbf7887fd9238573353d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
