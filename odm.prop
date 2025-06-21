@@ -1,2 +1,0 @@
-# QC framework value-adds
-ro.vendor.qti.va_odm.support=1

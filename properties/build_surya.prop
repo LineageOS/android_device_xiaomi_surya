@@ -1,0 +1,4 @@
+# sku build properties
+ro.product.odm.device=surya
+ro.product.odm.model=M2007J20CG
+ro.product.odm.name=surya_eea
