@@ -1,0 +1,5 @@
+# Model-specific properties
+import /odm/etc/build_${ro.boot.hwname}.prop
+
+# Model-specific properties (recovery)
+import /build_${ro.boot.hwname}.prop
