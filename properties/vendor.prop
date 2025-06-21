@@ -23,3 +23,6 @@ persist.vendor.fingerprint.sensor_location=1080|920|220|local:463094668838699737
 persist.vendor.cp.fcc_main_ua=400000
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.vbus_offset_mv=1040
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
