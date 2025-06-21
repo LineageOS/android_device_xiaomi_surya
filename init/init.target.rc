@@ -29,7 +29,6 @@
 
 on early-init
     setprop ro.boot.hardware.revision ${ro.boot.hwc}_${ro.boot.hwlevel}_${ro.boot.hwversion}
-    setprop vendor.usb.product_string ${ro.product.vendor.model}
 
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
