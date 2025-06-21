@@ -244,3 +244,9 @@ vendor.usb.use_gadget_hal=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Device
+ro.product.mod_device=surya_global
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system

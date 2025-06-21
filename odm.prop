@@ -1,2 +1,8 @@
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
+
+# Model-specific properties
+import /odm/etc/build_${ro.boot.hwname}.prop
+
+# Model-specific properties (recovery)
+import /build_${ro.boot.hwname}.prop

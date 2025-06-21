@@ -205,8 +205,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.qcom.sh
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_surya)
-
 # Input
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc)
@@ -351,6 +349,15 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
+
+# System properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sku/build_surya.prop:$(TARGET_COPY_OUT_ODM)/etc/build_surya.prop \
+    $(LOCAL_PATH)/sku/build_karna.prop:$(TARGET_COPY_OUT_ODM)/etc/build_karna.prop
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sku/build_surya.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_surya.prop \
+    $(LOCAL_PATH)/sku/build_karna.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_karna.prop
 
 # Telephony
 PRODUCT_PACKAGES += \
