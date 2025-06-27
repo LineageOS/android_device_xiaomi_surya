@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6dd2c0e5_955de488",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-06-27T06:43:43Z",
+      "side": 1,
+      "message": "audio config issue. no ringtone.",
+      "revId": "6bc608f866dc94b8008f1f92a2ad6fea80a397b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
