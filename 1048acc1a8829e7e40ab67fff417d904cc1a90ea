@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3f7378ea_33ad8d33",
+        "filename": "init/init_surya.cpp",
+        "patchSetId": 6
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-09-06T18:10:25Z",
+      "side": 0,
+      "message": "this is intentional. i haven\u0027t found any surya user with THAI/THAI_PA region (M2007J20CT)",
+      "parentUuid": "800d6fde_9eef99c5",
+      "revId": "1048acc1a8829e7e40ab67fff417d904cc1a90ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "be62d619_ef82d73d",
         "filename": "init/init_surya.cpp",
         "patchSetId": 6
@@ -31,6 +49,24 @@
       "writtenOn": "2025-09-06T15:42:17Z",
       "side": 0,
       "message": "Properties like the HW revision, USB product string or bluetooth device default name are not set in the current patchset, I don\u0027t know if that\u0027s intentional.",
+      "revId": "1048acc1a8829e7e40ab67fff417d904cc1a90ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b6f9bd1_7b06ae43",
+        "filename": "init/init_surya.cpp",
+        "patchSetId": 6
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 34244
+      },
+      "writtenOn": "2025-09-06T18:10:25Z",
+      "side": 0,
+      "message": "hw revision is being set by init.target.rc after this commit I3a9707597ba01690bdf992e77d7d59d67213bca9\n\nand i did USB product string or bluetooth device default name in different commits intentionally. but now i have squashed them.",
+      "parentUuid": "be62d619_ef82d73d",
       "revId": "1048acc1a8829e7e40ab67fff417d904cc1a90ea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
