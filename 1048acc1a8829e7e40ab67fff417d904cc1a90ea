@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "800d6fde_9eef99c5",
+        "filename": "init/init_surya.cpp",
+        "patchSetId": 6
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-09-06T15:42:17Z",
+      "side": 0,
+      "message": "ro.boot.hwc isn\u0027t handled, you\u0027re assigning the same model to all surya devices instead of distinguishing between the regions as done in your libinit.",
+      "revId": "1048acc1a8829e7e40ab67fff417d904cc1a90ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be62d619_ef82d73d",
+        "filename": "init/init_surya.cpp",
+        "patchSetId": 6
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-09-06T15:42:17Z",
+      "side": 0,
+      "message": "Properties like the HW revision, USB product string or bluetooth device default name are not set in the current patchset, I don\u0027t know if that\u0027s intentional.",
+      "revId": "1048acc1a8829e7e40ab67fff417d904cc1a90ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
